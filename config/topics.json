@@ -1,0 +1,51 @@
+{
+ "_comment": "番組の題材設定。ここを編集するだけで、ジャンルの追加・削除・並び替え・取得元の変更ができます。コードの修正は不要です。",
+ "episode": {
+  "target_seconds": 180,
+  "max_total_items": 8,
+  "language": "ja"
+ },
+ "categories": [
+  {
+   "id": "general",
+   "label": "一般ニュース",
+   "enabled": true,
+   "max_items": 3,
+   "style": "事実を落ち着いて簡潔に。憶測は避ける。",
+   "feeds": [
+    "https://news.yahoo.co.jp/rss/topics/top-picks.xml"
+   ]
+  },
+  {
+   "id": "anime",
+   "label": "アニメ",
+   "enabled": true,
+   "max_items": 2,
+   "style": "作品名は正確に。親しみやすい口調で。",
+   "feeds": [
+    "https://animeanime.jp/rss/index.rdf"
+   ]
+  },
+  {
+   "id": "gadget",
+   "label": "ガジェット",
+   "enabled": true,
+   "max_items": 2,
+   "style": "製品名・価格・発売日を具体的に。",
+   "feeds": [
+    "https://www.gizmodo.jp/index.xml"
+   ]
+  },
+  {
+   "id": "stocks",
+   "label": "株・マーケット",
+   "enabled": true,
+   "max_items": 2,
+   "style": "数値は出典の通りに。投資助言はしない。",
+   "feeds": [
+    "https://news.yahoo.co.jp/rss/categories/business.xml"
+   ],
+   "disclaimer": "投資判断はご自身でお願いします。"
+  }
+ ]
+}

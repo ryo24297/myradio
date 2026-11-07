@@ -1,0 +1,52 @@
+{
+ "format": "myradio/character-1",
+ "type": "sprites",
+ "size": [
+  896,
+  768
+ ],
+ "background": "#161a26",
+ "base": "base.png",
+ "depth": "depth.png",
+ "parts": {
+  "mouth_half": {
+   "src": "mouth_half.png",
+   "x": 430,
+   "y": 318
+  },
+  "mouth_open": {
+   "src": "mouth_open.png",
+   "x": 430,
+   "y": 318
+  },
+  "blink": {
+   "src": "blink.png",
+   "x": 448,
+   "y": 245
+  },
+  "smile_mouth": {
+   "src": "smile_mouth.png",
+   "x": 430,
+   "y": 318
+  },
+  "half_blink": {
+   "src": "half_blink.png",
+   "x": 448,
+   "y": 245
+  }
+ },
+ "mouth": {
+  "1": "mouth_half",
+  "2": "mouth_open"
+ },
+ "eye": {
+  "blink": "blink",
+  "half": "half_blink"
+ },
+ "expressions": {
+  "smile": {
+   "mouth": "smile_mouth"
+  }
+ },
+ "note": "AIで生成したキャラクターです。base.png に、口（mouth_*）と目（blink・look_*）の小さな画像を x, y の位置に重ねる"
+}

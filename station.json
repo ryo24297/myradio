@@ -1,0 +1,33 @@
+{
+ "format": "myradio/station-1",
+ "name": "ものラジオ",
+ "description": "一般ニュース・アニメ・ガジェット・株の、きのうの気になるニュースを、毎朝 3 分で。",
+ "tagline": "朝のニュース",
+ "logo": "logo.svg",
+ "url": "https://ryo24297.github.io/myradio/",
+ "repo": "https://github.com/ryo24297/myradio",
+ "language": "ja",
+ "languages": [
+  "ja"
+ ],
+ "schedule": {
+  "every": "day",
+  "time": "06:30",
+  "timezone": "Asia/Tokyo"
+ },
+ "episodes": "episodes.json",
+ "character": {
+  "pack": "character/character.json",
+  "thumbnail": "character/base.png",
+  "note": "仮のキャラクターです"
+ },
+ "credits": [
+  "声：Microsoft Edge 音声合成（ja-JP-NanamiNeural）"
+ ],
+ "caster": "声：Nanami",
+ "audio": {
+  "dir": "audio",
+  "keep_days": 30
+ },
+ "weather": true
+}
