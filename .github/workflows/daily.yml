@@ -26,6 +26,9 @@ jobs:
       - run: pip install -r tools/pipeline/requirements.txt
       - name: Make episode
         env:
+          LLM_PROVIDER: ${{ vars.LLM_PROVIDER }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_MODEL: ${{ vars.GEMINI_MODEL }}
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           CLAUDE_MODEL: ${{ vars.CLAUDE_MODEL }}
           TTS_PROVIDER: ${{ vars.TTS_PROVIDER }}

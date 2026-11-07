@@ -8,8 +8,9 @@ usage:
   python tools/pipeline/run.py --dry-run       # 取得だけして候補を表示
 
 環境変数:
-  ANTHROPIC_API_KEY  必須(台本生成)
-  CLAUDE_MODEL       既定 claude-sonnet-5-5
+  LLM_PROVIDER       gemini(既定) | claude
+  GEMINI_API_KEY     LLM_PROVIDER=gemini のとき必須。GEMINI_MODEL で モデル変更(既定 gemini-2.5-flash)
+  ANTHROPIC_API_KEY  LLM_PROVIDER=claude のとき必須。CLAUDE_MODEL でモデル変更
   TTS_PROVIDER       edge(既定) | openai
   TTS_VOICE          edge: ja-JP-NanamiNeural など / openai: voice 名
   OPENAI_API_KEY, OPENAI_BASE_URL, OPENAI_TTS_MODEL   TTS_PROVIDER=openai のとき
@@ -112,18 +113,36 @@ def build_prompt(cfg, cands, now):
     return "\n".join(parts)
 
 
-def generate_script(cfg, cands, now):
-    import anthropic
+def llm_complete(prompt):
+    """LLM_PROVIDER で台本の生成元を切り替える: gemini(既定) | claude"""
+    provider = (os.environ.get("LLM_PROVIDER") or "gemini")
+    if provider == "gemini":
+        import requests
+        model = os.environ.get("GEMINI_MODEL") or "gemini-2.5-flash"
+        r = requests.post(
+            f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent",
+            headers={"x-goog-api-key": os.environ["GEMINI_API_KEY"]}, timeout=180,
+            json={"systemInstruction": {"parts": [{"text": SYSTEM}]},
+                  "contents": [{"role": "user", "parts": [{"text": prompt}]}],
+                  "generationConfig": {"responseMimeType": "application/json", "temperature": 0.4}})
+        if r.status_code != 200:
+            raise RuntimeError(f"Gemini API {r.status_code}: {r.text[:300]}")
+        return "".join(p.get("text", "") for p in r.json()["candidates"][0]["content"]["parts"])
+    if provider == "claude":
+        import anthropic
+        msg = anthropic.Anthropic().messages.create(
+            model=os.environ.get("CLAUDE_MODEL") or "claude-sonnet-5-5", max_tokens=6000, system=SYSTEM,
+            messages=[{"role": "user", "content": prompt}])
+        return "".join(b.text for b in msg.content if b.type == "text")
+    raise SystemExit(f"未対応の LLM_PROVIDER: {provider}")
 
-    client = anthropic.Anthropic()
-    model = os.environ.get("CLAUDE_MODEL", "claude-sonnet-5-5")
+
+def generate_script(cfg, cands, now):
     prompt = build_prompt(cfg, cands, now)
     allowed = {c["url"]: (cat, c) for cat, cs in cands.items() for c in cs}
     last_err = None
     for attempt in range(3):
-        msg = client.messages.create(model=model, max_tokens=6000, system=SYSTEM,
-                                     messages=[{"role": "user", "content": prompt}])
-        text = "".join(b.text for b in msg.content if b.type == "text").strip()
+        text = llm_complete(prompt).strip()
         text = re.sub(r"^```(?:json)?|```$", "", text, flags=re.M).strip()
         try:
             script = json.loads(text)
@@ -161,10 +180,10 @@ def duration(path):
 
 
 def tts_one(text, out_path):
-    provider = os.environ.get("TTS_PROVIDER", "edge")
+    provider = (os.environ.get("TTS_PROVIDER") or "edge")
     if provider == "edge":
         import asyncio, edge_tts
-        voice = os.environ.get("TTS_VOICE", "ja-JP-NanamiNeural")
+        voice = (os.environ.get("TTS_VOICE") or "ja-JP-NanamiNeural")
         asyncio.run(edge_tts.Communicate(text, voice).save(str(out_path)))
     elif provider == "openai":
         import requests
@@ -172,7 +191,7 @@ def tts_one(text, out_path):
         r = requests.post(f"{base}/audio/speech", timeout=120,
                           headers={"Authorization": f"Bearer {os.environ['OPENAI_API_KEY']}"},
                           json={"model": os.environ.get("OPENAI_TTS_MODEL", "gpt-4o-mini-tts"),
-                                "voice": os.environ.get("TTS_VOICE", "alloy"), "input": text, "response_format": "mp3"})
+                                "voice": (os.environ.get("TTS_VOICE") or "alloy"), "input": text, "response_format": "mp3"})
         r.raise_for_status()
         out_path.write_bytes(r.content)
     else:
