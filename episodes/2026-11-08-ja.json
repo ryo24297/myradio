@@ -1,0 +1,453 @@
+{
+ "format": "monoradio/news-1",
+ "date": "2026-11-08",
+ "lang": "ja",
+ "title": "ものラジオ 11月8日版",
+ "opening": [
+  {
+   "say": "おはようございます。2026年11月8日、日曜日の朝です。",
+   "show": "おはようございます。2026年11月8日、日曜日です。"
+  },
+  {
+   "say": "今朝は注目のニュースを8本、まとめてお伝えします。",
+   "show": "今朝は注目のニュースを8本、まとめてお伝えします。"
+  }
+ ],
+ "closing": [
+  {
+   "say": "愛知県の地震情報、引き続きご注意ください。それでは今日も良い一日を。",
+   "show": "愛知県の地震情報、引き続きご注意ください。それでは今日も良い一日を。"
+  }
+ ],
+ "highlight": 0,
+ "news": [
+  {
+   "label": "愛知県で震度5強",
+   "points": [
+    "震度5強を観測",
+    "津波の心配なし"
+   ],
+   "details": [
+    "愛知県で地震が発生しました。",
+    "津波の心配はないとのことです。"
+   ],
+   "lines": [
+    {
+     "say": "愛知県で震度5強の地震がありました。",
+     "show": "愛知県で震度5強の地震がありました。"
+    },
+    {
+     "say": "津波の心配はないとのことです。",
+     "show": "津波の心配はないとのことです。"
+    }
+   ],
+   "url": "https://news.yahoo.co.jp/pickup/6601719?source=rss",
+   "link": {
+    "url": "https://news.yahoo.co.jp/pickup/6601719?source=rss",
+    "title": "愛知県で震度5強 津波の心配なし - Yahoo!ニュース",
+    "site": "Yahoo!ニュース",
+    "description": "8日午前1時4分ごろ、愛知県で最大震度5強を観測する強い地震がありました。",
+    "image": "https://news-pctr.c.yimg.jp/t/news-topics/images/tpc/2026/11/8/20fd9b6c4069efad4e6c6ddd420278a0d6ad96bdb85db47a00b378c4fa392324.jpg",
+    "icon": null
+   },
+   "category_label": "一般ニュース"
+  },
+  {
+   "label": "大阪維新吉村体制へ",
+   "points": [
+    "吉村体制が継続",
+    "3期目へ突入"
+   ],
+   "details": [
+    "大阪維新の会に関するニュースです。",
+    "吉村体制が3期目となります。"
+   ],
+   "lines": [
+    {
+     "say": "大阪維新の会は、吉村体制が3期目に入ります。",
+     "show": "大阪維新の会は、吉村体制が3期目に入ります。"
+    },
+    {
+     "say": "今後の動向が注目されます。",
+     "show": "今後の動向が注目されます。"
+    }
+   ],
+   "url": "https://news.yahoo.co.jp/pickup/6601718?source=rss",
+   "link": {
+    "url": "https://news.yahoo.co.jp/pickup/6601718?source=rss",
+    "title": "大阪維新の会「吉村体制」3期目に - Yahoo!ニュース",
+    "site": "Yahoo!ニュース",
+    "description": "地域政党・大阪維新の会は7日に開いた全体会議で、吉村洋文代表（51）＝大阪府知事＝の3期目の続投を承認した。吉村氏は大阪都構想の住民投票や統一地方選という重要局面で、引き続き党のかじ取りを託されるこ",
+    "image": "https://news-pctr.c.yimg.jp/t/news-topics/images/tpc/2026/11/7/cf435b76024bb5823e8c35ecce1118726d156a9255df0fb4d34d7a320ab60dc0.jpg",
+    "icon": null
+   },
+   "category_label": "一般ニュース"
+  },
+  {
+   "label": "女性監禁疑い",
+   "points": [
+    "監禁の疑いで逮捕",
+    "供述後に遺体発見"
+   ],
+   "details": [
+    "女性を監禁した疑いの事件です。",
+    "供述に基づき遺体が発見されました。"
+   ],
+   "lines": [
+    {
+     "say": "女性を監禁した疑いで逮捕された事件です。",
+     "show": "女性を監禁した疑いで逮捕された事件です。"
+    },
+    {
+     "say": "供述に基づき、遺体が発見されました。",
+     "show": "供述に基づき、遺体が発見されました。"
+    }
+   ],
+   "url": "https://news.yahoo.co.jp/pickup/6601700?source=rss",
+   "link": {
+    "url": "https://news.yahoo.co.jp/pickup/6601700?source=rss",
+    "title": "女性を監禁疑い 供述後に遺体発見 - Yahoo!ニュース",
+    "site": "Yahoo!ニュース",
+    "description": "今年10月、石川県野々市市内から小松市内を走る軽乗用車の車内で、県内に住む20代女性を監禁したとして、警察は今月6日、広島県広島市に住む49歳の無職の男を監禁の疑いで逮捕しました。男の供述に基づき福",
+    "image": "https://news-pctr.c.yimg.jp/t/news-topics/images/tpc/2026/11/7/9c8b8c98db33ab473c63c5db41b5fd92e3936a2fddcb1b6a4173318223fb5653.jpg",
+    "icon": null
+   },
+   "category_label": "一般ニュース"
+  },
+  {
+   "label": "鬼灯の冷徹原画展",
+   "points": [
+    "豪華なグッズ展開",
+    "美麗な複製原画"
+   ],
+   "details": [
+    "「鬼灯の冷徹」の原画展グッズです。",
+    "美麗な原画や漫画のコマが使われています。"
+   ],
+   "lines": [
+    {
+     "say": "「鬼灯の冷徹」の原画展グッズが発表されました。",
+     "show": "「鬼灯の冷徹」の原画展グッズが発表されました。"
+    },
+    {
+     "say": "美麗な原画や漫画のコマが使われています。",
+     "show": "美麗な原画や漫画のコマが使われています。"
+    }
+   ],
+   "url": "https://animeanime.jp/article/2026/11/07/104576.html",
+   "link": {
+    "url": "https://animeanime.jp/article/2026/11/07/104576.html",
+    "title": "「鬼灯の冷徹」鬼灯様も白澤様も！原画展のグッズが豪華すぎる…！美麗複製原画やコミックス表紙、漫画コマ使用でファン必見☆ | アニメ！アニメ！",
+    "site": "アニメ！アニメ！",
+    "description": "『鬼灯の冷徹』15周年を記念した原画展での新作グッズ発売が決定。原画展は2027年2月4日（木）より、WHAT CAFE（寺田倉庫）にて期間限定で行われる。",
+    "image": "https://animeanime.jp/imgs/ogp_f/951746.jpg",
+    "icon": null
+   },
+   "category_label": "アニメ"
+  },
+  {
+   "label": "ジョジョコラボ",
+   "points": [
+    "ファミマとコラボ",
+    "限定ソックス登場"
+   ],
+   "details": [
+    "「ジョジョ」とファミリーマートのコラボです。",
+    "ジョニィとジャイロの限定ソックスです。"
+   ],
+   "lines": [
+    {
+     "say": "「ジョジョ」とファミリーマートがコラボします。",
+     "show": "「ジョジョ」とファミリーマートがコラボします。"
+    },
+    {
+     "say": "ジョニィとジャイロの限定ソックスが登場です。",
+     "show": "ジョニィとジャイロの限定ソックスが登場です。"
+    }
+   ],
+   "url": "https://animeanime.jp/article/2026/11/07/104571.html",
+   "link": {
+    "url": "https://animeanime.jp/article/2026/11/07/104571.html",
+    "title": "「ジョジョ」ジョニィ＆ジャイロが、ソックスなど限定商品にッ！足早くなりそう… スティール・ボール・ラン×ファミマがコラボ | アニメ！アニメ！",
+    "site": "アニメ！アニメ！",
+    "description": "アニメ『スティール・ボール・ラン ジョジョの奇妙な冒険』より、ジョニィ・ジョースターやジャイロ・ツェペリをイメージしたアパレルアイテムが登場。2026年11月6日（金）12時より、ファミリーマートのECサイト「ファミマオンライン」にて販売中だ。",
+    "image": "https://animeanime.jp/imgs/ogp_f/953030.jpg",
+    "icon": null
+   },
+   "category_label": "アニメ"
+  },
+  {
+   "label": "AirTagで追跡",
+   "points": [
+    "ロストバゲージ追跡",
+    "航空会社の対応"
+   ],
+   "details": [
+    "旅行客がエアタグを使用しました。",
+    "航空会社の対応の実態が問われています。"
+   ],
+   "lines": [
+    {
+     "say": "旅行客がエアタグを使って荷物を追跡しました。",
+     "show": "旅行客がAirTagを使って荷物を追跡しました。"
+    },
+    {
+     "say": "航空会社の対応の実態が問われています。",
+     "show": "航空会社の対応の実態が問われています。"
+    }
+   ],
+   "url": "https://www.gizmodo.jp/article/2611-airtag-lost-baggage-tracking/",
+   "link": {
+    "url": "https://www.gizmodo.jp/article/2611-airtag-lost-baggage-tracking/",
+    "title": "航空会社がウソついてる？ 旅行客がAirTagを使って自分のロストバゲージを追跡 | ギズモード・ジャパン",
+    "site": "ギズモード・ジャパン",
+    "description": "旅行客がAppleのAirTagを使用してロストバゲージを自ら追跡した話題を紹介。航空会社の対応の実態と荷物行方の謎に迫ります。",
+    "image": "https://media.loom-app.com/gizmodo/dist/images/2023/01/06/shutterstock_735367750.jpeg?w=1200&amp;h=630",
+    "icon": null
+   },
+   "category_label": "ガジェット"
+  },
+  {
+   "label": "OpenAIバグ探し",
+   "points": [
+    "AIが脆弱性を発見",
+    "81件の弱点"
+   ],
+   "details": [
+    "OpenAIのAIがFirefoxを調査。",
+    "未知の弱点が81件見つかりました。"
+   ],
+   "lines": [
+    {
+     "say": "OpenAIのAIがFirefoxの脆弱性を発見しました。",
+     "show": "OpenAIのAIがFirefoxの脆弱性を発見しました。"
+    },
+    {
+     "say": "81件もの未知の弱点が見つかっています。",
+     "show": "81件もの未知の弱点が見つかっています。"
+    }
+   ],
+   "url": "https://www.gizmodo.jp/article/2611-openai-bug-finding-ai-firefox-vulnerabilities/",
+   "link": {
+    "url": "https://www.gizmodo.jp/article/2611-openai-bug-finding-ai-firefox-vulnerabilities/",
+    "title": "OpenAIの最新「バグ探しAI」が強力すぎる。Firefoxの未知の弱点81件を発見 | ギズモード・ジャパン",
+    "site": "ギズモード・ジャパン",
+    "description": "OpenAIの最新AI「GPT-6 Cyber」がFirefoxの未知の脆弱性81件を発見。サイバーセキュリティの現状と悪用リスクを防ぐ限定提供の仕組みを解説します。",
+    "image": "https://media.loom-app.com/loom/2026/11/06/c4610ada-f206-4288-a3e2-b13fa1a5eac9/original.png?w=1200&amp;h=630",
+    "icon": null
+   },
+   "category_label": "ガジェット"
+  },
+  {
+   "label": "月給の手取り額",
+   "points": [
+    "手取り額の解説",
+    "控除の仕組み"
+   ],
+   "details": [
+    "月給30万円の手取りについての解説です。",
+    "保険料や税金が差し引かれる仕組みです。"
+   ],
+   "lines": [
+    {
+     "say": "月給30万円の手取り額についての解説です。",
+     "show": "月給30万円の手取り額についての解説です。"
+    },
+    {
+     "say": "保険料や税金が差し引かれる仕組みが分かります。",
+     "show": "保険料や税金が差し引かれる仕組みが分かります。"
+    }
+   ],
+   "url": "https://news.yahoo.co.jp/articles/ee06915526611781d92e7a270dce54b3b9e3465e?source=rss",
+   "link": {
+    "url": "https://news.yahoo.co.jp/articles/ee06915526611781d92e7a270dce54b3b9e3465e?source=rss",
+    "title": "「月給30万円の手取り」はいくら？月給（額面）別の手取り額一覧表を年代別にみる（LIMO） - Yahoo!ニュース",
+    "site": "Yahoo!ニュース",
+    "description": "額面の月給と、実際に口座に振り込まれる金額は同じではありません。健康保険料や厚生年金保険料、所得税などが、給与から差し引かれているためです。明細の「控除」の欄を見ると、何がいくら引かれているのかが並",
+    "image": "https://newsatcl-pctr.c.yimg.jp/t/amd-img/20261107-00145511-toushin-000-1-view.jpg?exp=10800",
+    "icon": null
+   },
+   "category_label": "株・マーケット"
+  }
+ ],
+ "seconds": 93.91,
+ "lines_timed": [
+  {
+   "start": 0.6,
+   "end": 8.016,
+   "show": "おはようございます。2026年11月8日、日曜日です。",
+   "part": 0
+  },
+  {
+   "start": 8.266,
+   "end": 13.186,
+   "show": "今朝は注目のニュースを8本、まとめてお伝えします。",
+   "part": 0
+  },
+  {
+   "start": 13.436,
+   "end": 17.324,
+   "show": "愛知県で震度5強の地震がありました。",
+   "part": 1
+  },
+  {
+   "start": 17.574,
+   "end": 20.886,
+   "show": "津波の心配はないとのことです。",
+   "part": 1
+  },
+  {
+   "start": 21.136,
+   "end": 26.488,
+   "show": "大阪維新の会は、吉村体制が3期目に入ります。",
+   "part": 2
+  },
+  {
+   "start": 26.738,
+   "end": 29.906,
+   "show": "今後の動向が注目されます。",
+   "part": 2
+  },
+  {
+   "start": 30.156,
+   "end": 34.62,
+   "show": "女性を監禁した疑いで逮捕された事件です。",
+   "part": 3
+  },
+  {
+   "start": 34.87,
+   "end": 39.142,
+   "show": "供述に基づき、遺体が発見されました。",
+   "part": 3
+  },
+  {
+   "start": 39.392,
+   "end": 43.904,
+   "show": "「鬼灯の冷徹」の原画展グッズが発表されました。",
+   "part": 4
+  },
+  {
+   "start": 44.154,
+   "end": 48.186,
+   "show": "美麗な原画や漫画のコマが使われています。",
+   "part": 4
+  },
+  {
+   "start": 48.436,
+   "end": 51.94,
+   "show": "「ジョジョ」とファミリーマートがコラボします。",
+   "part": 5
+  },
+  {
+   "start": 52.19,
+   "end": 56.174,
+   "show": "ジョニィとジャイロの限定ソックスが登場です。",
+   "part": 5
+  },
+  {
+   "start": 56.424,
+   "end": 61.08,
+   "show": "旅行客がAirTagを使って荷物を追跡しました。",
+   "part": 6
+  },
+  {
+   "start": 61.33,
+   "end": 65.458,
+   "show": "航空会社の対応の実態が問われています。",
+   "part": 6
+  },
+  {
+   "start": 65.708,
+   "end": 71.42,
+   "show": "OpenAIのAIがFirefoxの脆弱性を発見しました。",
+   "part": 7
+  },
+  {
+   "start": 71.67,
+   "end": 76.014,
+   "show": "81件もの未知の弱点が見つかっています。",
+   "part": 7
+  },
+  {
+   "start": 76.264,
+   "end": 80.944,
+   "show": "月給30万円の手取り額についての解説です。",
+   "part": 8
+  },
+  {
+   "start": 81.194,
+   "end": 85.562,
+   "show": "保険料や税金が差し引かれる仕組みが分かります。",
+   "part": 8
+  },
+  {
+   "start": 85.812,
+   "end": 93.612,
+   "show": "愛知県の地震情報、引き続きご注意ください。それでは今日も良い一日を。",
+   "part": 9
+  }
+ ],
+ "segments": [
+  {
+   "kind": "opening",
+   "index": null,
+   "start": 0.6,
+   "end": 13.436
+  },
+  {
+   "kind": "news",
+   "index": 0,
+   "start": 13.436,
+   "end": 21.136
+  },
+  {
+   "kind": "news",
+   "index": 1,
+   "start": 21.136,
+   "end": 30.156
+  },
+  {
+   "kind": "news",
+   "index": 2,
+   "start": 30.156,
+   "end": 39.392
+  },
+  {
+   "kind": "news",
+   "index": 3,
+   "start": 39.392,
+   "end": 48.436
+  },
+  {
+   "kind": "news",
+   "index": 4,
+   "start": 48.436,
+   "end": 56.424
+  },
+  {
+   "kind": "news",
+   "index": 5,
+   "start": 56.424,
+   "end": 65.708
+  },
+  {
+   "kind": "news",
+   "index": 6,
+   "start": 65.708,
+   "end": 76.264
+  },
+  {
+   "kind": "news",
+   "index": 7,
+   "start": 76.264,
+   "end": 85.812
+  },
+  {
+   "kind": "closing",
+   "index": null,
+   "start": 85.812,
+   "end": 93.862
+  }
+ ],
+ "made_at": "2026-11-08T02:11:39"
+}
