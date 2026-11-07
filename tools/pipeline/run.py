@@ -119,14 +119,36 @@ def llm_complete(prompt):
     if provider == "gemini":
         import requests
         model = os.environ.get("GEMINI_MODEL") or "gemini-3.8-flash"
-        r = requests.post(
-            f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent",
-            headers={"x-goog-api-key": os.environ["GEMINI_API_KEY"]}, timeout=180,
-            json={"systemInstruction": {"parts": [{"text": SYSTEM}]},
-                  "contents": [{"role": "user", "parts": [{"text": prompt}]}],
-                  "generationConfig": {"responseMimeType": "application/json", "temperature": 0.4}})
-        if r.status_code != 200:
-            raise RuntimeError(f"Gemini API {r.status_code}: {r.text[:300]}")
+        url = f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent"
+        headers = {"x-goog-api-key": os.environ["GEMINI_API_KEY"]}
+        gen = {"responseMimeType": "application/json", "temperature": 0.4, "maxOutputTokens": 8192}
+        # 考える量を抑えて応答を速くする(GEMINI_THINKING=off で指定を外す。非対応モデルなら自動で外して再送)
+        use_thinking = (os.environ.get("GEMINI_THINKING") or "low") != "off"
+        r = None
+        for attempt in range(5):
+            g = dict(gen)
+            if use_thinking:
+                g["thinkingConfig"] = {"thinkingLevel": os.environ.get("GEMINI_THINKING") or "low"}
+            body = {"systemInstruction": {"parts": [{"text": SYSTEM}]},
+                    "contents": [{"role": "user", "parts": [{"text": prompt}]}], "generationConfig": g}
+            try:
+                r = requests.post(url, headers=headers, json=body, timeout=(15, 120))
+            except requests.exceptions.RequestException as e:
+                log(f"[warn] Gemini 接続/タイムアウト(試行{attempt + 1}): {type(e).__name__}")
+                time.sleep(5 * (attempt + 1))
+                continue
+            if r.status_code == 400 and use_thinking and "thinking" in r.text.lower():
+                log("[warn] thinking指定が非対応のため外して再送")
+                use_thinking = False
+                continue
+            if r.status_code in (429, 500, 502, 503, 504):
+                log(f"[warn] Gemini {r.status_code}(試行{attempt + 1})。待って再試行")
+                time.sleep(10 * (attempt + 1))
+                continue
+            break
+        if r is None or r.status_code != 200:
+            raise RuntimeError(f"Gemini API 失敗: {r.status_code if r is not None else '応答なし'} "
+                               f"{r.text[:300] if r is not None else ''}")
         return "".join(p.get("text", "") for p in r.json()["candidates"][0]["content"]["parts"])
     if provider == "claude":
         import anthropic
