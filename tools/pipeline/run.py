@@ -113,43 +113,72 @@ def build_prompt(cfg, cands, now):
     return "\n".join(parts)
 
 
+GEMINI_BASE = "https://generativelanguage.googleapis.com/v1beta"
+
+
+def gemini_models(key):
+    """使える Flash 系モデルを API の一覧から集める(軽いもの・安定版を優先)。"""
+    import requests
+    try:
+        r = requests.get(f"{GEMINI_BASE}/models?pageSize=200", headers={"x-goog-api-key": key}, timeout=20)
+        names = [m["name"].split("/")[-1] for m in r.json().get("models", [])
+                 if "generateContent" in m.get("supportedGenerationMethods", [])]
+    except Exception as e:
+        log(f"[warn] モデル一覧を取れませんでした: {e}")
+        return []
+    bad = ("image", "tts", "audio", "live", "embedding", "robotics", "computer", "thinking", "exp", "preview", "customtools")
+    flash = [n for n in names if "flash" in n and not any(b in n for b in bad)]
+    flash.sort(key=lambda n: ("lite" not in n, n), reverse=False)   # lite を先に
+    return flash
+
+
+def gemini_try(model, prompt, key, tries=2):
+    """1つのモデルで試す。成功すれば本文、失敗なら None。"""
+    import requests
+    url = f"{GEMINI_BASE}/models/{model}:generateContent"
+    use_thinking = (os.environ.get("GEMINI_THINKING") or "low") != "off"
+    for attempt in range(tries):
+        g = {"responseMimeType": "application/json", "temperature": 0.4, "maxOutputTokens": 8192}
+        if use_thinking:
+            g["thinkingConfig"] = {"thinkingLevel": os.environ.get("GEMINI_THINKING") or "low"}
+        body = {"systemInstruction": {"parts": [{"text": SYSTEM}]},
+                "contents": [{"role": "user", "parts": [{"text": prompt}]}], "generationConfig": g}
+        try:
+            r = requests.post(url, headers={"x-goog-api-key": key}, json=body, timeout=(15, 60))
+        except requests.exceptions.RequestException as e:
+            log(f"[warn] {model}: {type(e).__name__}(試行{attempt + 1})")
+            time.sleep(3)
+            continue
+        if r.status_code == 400 and use_thinking and "thinking" in r.text.lower():
+            use_thinking = False
+            continue
+        if r.status_code == 200:
+            try:
+                return "".join(p.get("text", "") for p in r.json()["candidates"][0]["content"]["parts"])
+            except (KeyError, IndexError):
+                log(f"[warn] {model}: 応答が空")
+                return None
+        log(f"[warn] {model}: HTTP {r.status_code}(試行{attempt + 1}) {r.text[:120]!r}")
+        if r.status_code in (404, 403, 401):   # このモデルは使えない
+            return None
+        time.sleep(3)
+    return None
+
+
 def llm_complete(prompt):
     """LLM_PROVIDER で台本の生成元を切り替える: gemini(既定) | claude"""
     provider = (os.environ.get("LLM_PROVIDER") or "gemini")
     if provider == "gemini":
-        import requests
-        model = os.environ.get("GEMINI_MODEL") or "gemini-3.8-flash"
-        url = f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent"
-        headers = {"x-goog-api-key": os.environ["GEMINI_API_KEY"]}
-        gen = {"responseMimeType": "application/json", "temperature": 0.4, "maxOutputTokens": 8192}
-        # 考える量を抑えて応答を速くする(GEMINI_THINKING=off で指定を外す。非対応モデルなら自動で外して再送)
-        use_thinking = (os.environ.get("GEMINI_THINKING") or "low") != "off"
-        r = None
-        for attempt in range(5):
-            g = dict(gen)
-            if use_thinking:
-                g["thinkingConfig"] = {"thinkingLevel": os.environ.get("GEMINI_THINKING") or "low"}
-            body = {"systemInstruction": {"parts": [{"text": SYSTEM}]},
-                    "contents": [{"role": "user", "parts": [{"text": prompt}]}], "generationConfig": g}
-            try:
-                r = requests.post(url, headers=headers, json=body, timeout=(15, 120))
-            except requests.exceptions.RequestException as e:
-                log(f"[warn] Gemini 接続/タイムアウト(試行{attempt + 1}): {type(e).__name__}")
-                time.sleep(5 * (attempt + 1))
-                continue
-            if r.status_code == 400 and use_thinking and "thinking" in r.text.lower():
-                log("[warn] thinking指定が非対応のため外して再送")
-                use_thinking = False
-                continue
-            if r.status_code in (429, 500, 502, 503, 504):
-                log(f"[warn] Gemini {r.status_code}(試行{attempt + 1})。待って再試行")
-                time.sleep(10 * (attempt + 1))
-                continue
-            break
-        if r is None or r.status_code != 200:
-            raise RuntimeError(f"Gemini API 失敗: {r.status_code if r is not None else '応答なし'} "
-                               f"{r.text[:300] if r is not None else ''}")
-        return "".join(p.get("text", "") for p in r.json()["candidates"][0]["content"]["parts"])
+        key = os.environ["GEMINI_API_KEY"]
+        first = os.environ.get("GEMINI_MODEL") or "gemini-3.8-flash"
+        order = [first] + [m for m in gemini_models(key) if m != first]
+        log(f"[llm] モデル候補: {order[:6]}")
+        for model in order[:6]:
+            text = gemini_try(model, prompt, key)
+            if text:
+                log(f"[llm] 使用モデル: {model}")
+                return text
+        raise RuntimeError("Gemini の全モデルで失敗しました(混雑中の可能性。時間をおいて再実行してください)")
     if provider == "claude":
         import anthropic
         msg = anthropic.Anthropic().messages.create(
