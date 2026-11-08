@@ -38,7 +38,9 @@ def fetch_candidates(cfg, now):
         if not cat.get("enabled", True):
             continue
         items = []
-        for feed in cat["feeds"]:
+        for feed_cfg in cat["feeds"]:
+            feed = feed_cfg["url"] if isinstance(feed_cfg, dict) else feed_cfg
+            feed_inc = feed_cfg.get("include_keywords") if isinstance(feed_cfg, dict) else None
             try:
                 r = requests.get(feed, headers={"User-Agent": UA}, timeout=20)
                 parsed = feedparser.parse(r.content)
@@ -59,7 +61,7 @@ def fetch_candidates(cfg, now):
                 text_all = e.get("title", "") + e.get("summary", "")
                 if any(k in text_all for k in cfg.get("exclude_keywords", []) + cat.get("exclude_keywords", [])):
                     continue
-                inc = cat.get("include_keywords")
+                inc = feed_inc or cat.get("include_keywords")
                 if inc and not any(k in text_all for k in inc):
                     continue
                 seen.add(link)
@@ -68,15 +70,35 @@ def fetch_candidates(cfg, now):
                               "summary": summary.strip(), "time": dt.isoformat() if dt else None,
                               "site": parsed.feed.get("title", "")})
         items.sort(key=lambda x: x["time"] or "", reverse=True)
-        result[cat["id"]] = items[: cat.get("max_items", 2) * 6]
+        items = dedupe_similar(items)
+        result[cat["id"]] = items[: cat.get("max_candidates", cat.get("max_items", 2) * 6)]
         log(f"[fetch] {cat['label']}: {len(result[cat['id']])}件")
     return result
+
+
+def _grams(t):
+    t = re.sub(r"[\s\W_]+", "", t)
+    return {t[i:i + 2] for i in range(len(t) - 1)}
+
+
+def dedupe_similar(items, th=0.5):
+    """同じ話題の記事(タイトルが似ているもの)を1件にまとめる。新しい順を保つ。"""
+    kept, grams = [], []
+    for it in items:
+        g = _grams(it["title"])
+        if any(g and h and len(g & h) / min(len(g), len(h)) >= th for h in grams):
+            continue
+        kept.append(it)
+        grams.append(g)
+    return kept
 
 
 def og_link(url, fallback_title="", site=""):
     """記事の共有用画像(OGP)のURLを取る。画像自体は保存しない。"""
     import requests
     link = {"url": url, "title": fallback_title, "site": site, "description": "", "image": None, "icon": None}
+    if "news.google.com" in url:   # リダイレクトURLでは画像が取れない
+        return link
     try:
         html = requests.get(url, headers={"User-Agent": UA}, timeout=15).text[:200000]
         for key, prop in (("title", "og:title"), ("description", "og:description"),
