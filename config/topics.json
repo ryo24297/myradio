@@ -3,7 +3,8 @@
  "episode": {
   "target_seconds": 180,
   "max_total_items": 8,
-  "language": "ja"
+  "language": "ja",
+  "voice_style": "10代後半の生意気で小悪魔的な女の子が、相手をからかって少し見下すような得意げで甘い口調で、でも内容ははっきり聞き取りやすく"
  },
  "categories": [
   {
@@ -23,7 +24,8 @@
    "max_items": 2,
    "style": "作品名は正確に。親しみやすい口調で。",
    "feeds": [
-    "https://animeanime.jp/rss/index.rdf"
+    "https://animeanime.jp/rss/index.rdf",
+    "https://natalie.mu/comic/feed/news"
    ]
   },
   {
@@ -33,7 +35,9 @@
    "max_items": 2,
    "style": "製品名・価格・発売日を具体的に。",
    "feeds": [
-    "https://www.gizmodo.jp/index.xml"
+    "https://www.gizmodo.jp/index.xml",
+    "https://pc.watch.impress.co.jp/data/rss/1.0/pcw/feed.rdf",
+    "https://k-tai.watch.impress.co.jp/data/rss/1.0/ktw/feed.rdf"
    ]
   },
   {
@@ -43,9 +47,64 @@
    "max_items": 2,
    "style": "数値は出典の通りに。投資助言はしない。",
    "feeds": [
-    "https://news.yahoo.co.jp/rss/categories/business.xml"
+    "https://news.yahoo.co.jp/rss/topics/business.xml",
+    "https://toyokeizai.net/list/feed/rss"
    ],
-   "disclaimer": "投資判断はご自身でお願いします。"
+   "disclaimer": "投資判断はご自身でお願いします。",
+   "include_keywords": [
+    "株",
+    "日経",
+    "円安",
+    "円高",
+    "為替",
+    "相場",
+    "決算",
+    "利上げ",
+    "利下げ",
+    "金利",
+    "ドル",
+    "NY",
+    "半導体",
+    "ETF",
+    "上場",
+    "ビットコイン",
+    "投資",
+    "銘柄",
+    "市場",
+    "マーケット",
+    "経済",
+    "企業",
+    "業績",
+    "最高益",
+    "増益",
+    "減益",
+    "買収",
+    "日銀",
+    "FRB",
+    "物価",
+    "インフレ",
+    "賃上げ",
+    "NISA",
+    "新興国",
+    "原油",
+    "金価格"
+   ]
   }
+ ],
+ "preferences": {
+  "_comment": "ここに好みを書くとAIの記事選びの基準になります。書き換えて調整してください。",
+  "likes": "新作アニメや原作の発表、ガジェットの新製品・値下げ・セール、日経平均や為替、決算など相場に影響する動き、役に立つ新機能",
+  "dislikes": "殺人・傷害などの事件、事故、災害の被害の詳細、芸能人のゴシップ、政治家の失言、広告記事、同じ話題の重複",
+  "highlight_rule": "締めで取り上げる注目の1本は、明るい話題か役に立つ話題から選ぶ。事件・事故は選ばない。"
+ },
+ "exclude_keywords": [
+  "殺害",
+  "刺さ",
+  "切りつけ",
+  "死亡",
+  "逮捕",
+  "不倫",
+  "炎上",
+  "PR"
  ]
 }

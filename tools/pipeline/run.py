@@ -11,7 +11,7 @@ usage:
   LLM_PROVIDER       gemini(既定) | claude
   GEMINI_API_KEY     LLM_PROVIDER=gemini のとき必須。GEMINI_MODEL で モデル変更(既定 gemini-3.8-flash)
   ANTHROPIC_API_KEY  LLM_PROVIDER=claude のとき必須。CLAUDE_MODEL でモデル変更
-  TTS_PROVIDER       edge(既定) | openai
+  TTS_PROVIDER       gemini(既定。失敗時は edge に自動切替) | edge | openai
   TTS_VOICE          edge: ja-JP-NanamiNeural など / openai: voice 名
   OPENAI_API_KEY, OPENAI_BASE_URL, OPENAI_TTS_MODEL   TTS_PROVIDER=openai のとき
 """
@@ -56,13 +56,19 @@ def fetch_candidates(cfg, now):
                         continue
                 else:
                     dt = None
+                text_all = e.get("title", "") + e.get("summary", "")
+                if any(k in text_all for k in cfg.get("exclude_keywords", []) + cat.get("exclude_keywords", [])):
+                    continue
+                inc = cat.get("include_keywords")
+                if inc and not any(k in text_all for k in inc):
+                    continue
                 seen.add(link)
                 summary = re.sub(r"<[^>]+>", "", e.get("summary", ""))[:400]
                 items.append({"title": e.get("title", "").strip(), "url": link,
                               "summary": summary.strip(), "time": dt.isoformat() if dt else None,
                               "site": parsed.feed.get("title", "")})
         items.sort(key=lambda x: x["time"] or "", reverse=True)
-        result[cat["id"]] = items[: cat.get("max_items", 2) * 4]
+        result[cat["id"]] = items[: cat.get("max_items", 2) * 6]
         log(f"[fetch] {cat['label']}: {len(result[cat['id']])}件")
     return result
 
@@ -104,6 +110,10 @@ def build_prompt(cfg, cands, now):
     youbi = "月火水木金土日"[now.weekday()]
     parts = [f"日付: {now.year}年{now.month}月{now.day}日({youbi}曜日)",
              f"全体の上限: {cfg['episode']['max_total_items']}本 / 目標の長さ: 約{cfg['episode']['target_seconds']}秒", ""]
+    pref = cfg.get("preferences") or {}
+    if pref:
+        parts += ["【リスナーの好み】", f"好む話題: {pref.get('likes', '')}", f"避ける話題: {pref.get('dislikes', '')}",
+                  f"注目の選び方: {pref.get('highlight_rule', '')}", "候補の中から、好みに合うものを優先して選ぶこと。避ける話題しか無いカテゴリは、本数を減らしてよい。", ""]
     for cat in cfg["categories"]:
         if not cat.get("enabled", True) or not cands.get(cat["id"]):
             continue
@@ -264,8 +274,45 @@ def duration(path):
     return float(out.stdout.decode().strip())
 
 
+def gemini_tts_model(key):
+    import requests
+    pref = os.environ.get("GEMINI_TTS_MODEL")
+    if pref:
+        return pref
+    if "tts_model" not in _CACHE:
+        r = requests.get(f"{GEMINI_BASE}/models?pageSize=200", headers={"x-goog-api-key": key}, timeout=20)
+        names = [m["name"].split("/")[-1] for m in r.json().get("models", []) if "tts" in m["name"]]
+        names.sort(key=lambda n: ("flash" not in n, "preview" in n, n))   # flash の安定版を優先
+        if not names:
+            raise RuntimeError("Gemini のTTSモデルが見つかりません")
+        _CACHE["tts_model"] = names[0]
+        log(f"[tts] Geminiモデル: {names[0]} (候補 {names[:4]})")
+    return _CACHE["tts_model"]
+
+
+_CACHE = {}
+
+
 def tts_one(text, out_path):
-    provider = (os.environ.get("TTS_PROVIDER") or "edge")
+    provider = (os.environ.get("TTS_PROVIDER") or "gemini")
+    if provider == "gemini":
+        import base64, requests
+        key = os.environ["GEMINI_API_KEY"]
+        style = _CACHE.get("style") or "明るく自然に"
+        body = {"contents": [{"parts": [{"text": f"次の文章を、{style}読み上げてください。文章以外は読まないこと。\n\n{text}"}]}],
+                "generationConfig": {"responseModalities": ["AUDIO"],
+                                     "speechConfig": {"voiceConfig": {"prebuiltVoiceConfig": {
+                                         "voiceName": os.environ.get("TTS_VOICE") or "Leda"}}}}}
+        r = requests.post(f"{GEMINI_BASE}/models/{gemini_tts_model(key)}:generateContent",
+                          headers={"x-goog-api-key": key}, json=body, timeout=90)
+        if r.status_code != 200:
+            raise RuntimeError(f"Gemini TTS {r.status_code}: {r.text[:200]}")
+        part = r.json()["candidates"][0]["content"]["parts"][0]["inlineData"]
+        pcm = out_path.with_suffix(".pcm")
+        pcm.write_bytes(base64.b64decode(part["data"]))
+        run(["ffmpeg", "-y", "-f", "s16le", "-ar", "24000", "-ac", "1", "-i", str(pcm),
+             "-c:a", "libmp3lame", "-b:a", "64k", str(out_path)])
+        return
     if provider == "edge":
         import asyncio, edge_tts
         voice = (os.environ.get("TTS_VOICE") or "ja-JP-NanamiNeural")
@@ -380,7 +427,16 @@ def main():
     timed = segments = None
     seconds = 0
     if not a.no_audio:
-        timed, segments, seconds = synthesize(script, ROOT / "audio" / f"{date}-{cfg['episode']['language']}.mp3")
+        _CACHE["style"] = cfg["episode"].get("voice_style")
+        out = ROOT / "audio" / f"{date}-{cfg['episode']['language']}.mp3"
+        try:
+            timed, segments, seconds = synthesize(script, out)
+        except Exception as e:
+            if (os.environ.get("TTS_PROVIDER") or "gemini") != "gemini":
+                raise
+            log(f"[warn] Gemini TTS に失敗したので edge-tts で作り直します: {e}")
+            os.environ["TTS_PROVIDER"] = "edge"
+            timed, segments, seconds = synthesize(script, out)
     cats_by_id = {c["id"]: c["label"] for c in cfg["categories"]}
     p = write_episode(cfg, script, allowed, date, timed, segments, seconds, cats_by_id)
     log(f"[done] {p} ({seconds}秒, {len(script['news'])}本)")

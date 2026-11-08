@@ -22,9 +22,9 @@
   "note": "仮のキャラクターです"
  },
  "credits": [
-  "声：Microsoft Edge 音声合成（ja-JP-NanamiNeural）"
+  "声：Gemini 音声合成（AI生成音声）"
  ],
- "caster": "声：Nanami",
+ "caster": "声：AI音声",
  "audio": {
   "dir": "audio",
   "keep_days": 30
