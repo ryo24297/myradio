@@ -2,21 +2,21 @@
  "format": "monoradio/news-1",
  "date": "2026-11-08",
  "lang": "ja",
- "title": "11月8日 日曜日のニュース",
+ "title": "ものラジオ 11月8日号",
  "opening": [
   {
-   "say": "おはようございます。11月8日、日曜日の「ものラジオ」です。",
-   "show": "おはようございます。11月8日、日曜日の「ものラジオ」です。"
+   "say": "おはようございます。11月8日日曜日、ものラジオです。",
+   "show": "おはようございます。11月8日日曜日、ものラジオです。"
   },
   {
-   "say": "今朝は注目のニュースを8本、お届けします。",
-   "show": "今朝は注目のニュースを8本、お届けします。"
+   "say": "今朝は注目のアニメ情報から経済の動きまで、9本のニュースをお届けします。",
+   "show": "今朝は注目のアニメ情報から経済の動きまで、9本のニュースをお届けします。"
   }
  ],
  "closing": [
   {
-   "say": "今朝は「書店での切りつけ事件」に注目しました。",
-   "show": "今朝は「書店での切りつけ事件」に注目しました。"
+   "say": "今朝はスパイファミリーの2027年の展開に注目しました。",
+   "show": "今朝は「SPY×FAMILY」の2027年の展開に注目しました。"
   },
   {
    "say": "それでは、今日も良い一日をお過ごしください。",
@@ -26,178 +26,209 @@
  "highlight": 0,
  "news": [
   {
-   "label": "書店で男性切りつけられる",
+   "label": "スパイファミリー新展開",
    "points": [
-    "書店で切りつけ事件",
-    "容疑者の男を逮捕"
+    "シーズン4放送決定",
+    "劇場版第2弾公開"
    ],
    "details": [
-    "書店で男性が切りつけられる事件が発生しました。",
-    "警察は現場で男を逮捕し、詳しい状況を調べています。"
+    "テレビアニメのシーズン4がニセンニジュウナナネンに放送されます。",
+    "劇場版の第2弾も同じくニセンニジュウナナネンに公開予定です。"
    ],
    "lines": [
     {
-     "say": "書店で男性が切りつけられる事件がありました。",
-     "show": "書店で男性が切りつけられる事件がありました。"
+     "say": "人気アニメ、スパイファミリーの最新情報です。",
+     "show": "人気アニメ「SPY×FAMILY」の最新情報です。"
     },
     {
-     "say": "警察は現場で男を逮捕し、詳しく調べています。",
-     "show": "警察は現場で男を逮捕し、詳しく調べています。"
+     "say": "ニセンニジュウナナ年にテレビアニメシーズン4の放送と、劇場版第2弾の公開が決定しました。",
+     "show": "2027年にテレビアニメSeason 4の放送と、劇場版第2弾の公開が決定しました。"
     }
    ],
-   "url": "https://news.yahoo.co.jp/pickup/6601778?source=rss",
+   "url": "https://gigazine.net/news/20261108-spy-family-season4-film2/",
    "link": {
-    "url": "https://news.yahoo.co.jp/pickup/6601778?source=rss",
-    "title": "書店で男性切りつけられる 男逮捕 - Yahoo!ニュース",
-    "site": "Yahoo!ニュース",
-    "description": "8日午前11時過ぎ、大阪市北区茶屋町7の「MARUZEN＆ジュンク堂書店梅田店」から「男性が太ももを刺された」と110番があった。",
-    "image": "https://news-pctr.c.yimg.jp/t/news-topics/images/tpc/2026/11/8/b4f5bd94337d368264df39b24accc21ccddabbed08087c5c218d840305e74aba.jpg",
-    "icon": null
-   },
-   "category_label": "一般ニュース"
-  },
-  {
-   "label": "ガザで豪雨 避難民のテント浸水",
-   "points": [
-    "ガザ地区で豪雨",
-    "避難民のテントが浸水"
-   ],
-   "details": [
-    "ガザ地区で激しい雨が降り、避難民が暮らすテントが浸水する被害が出ています。",
-    null
-   ],
-   "lines": [
-    {
-     "say": "ガザ地区で豪雨が発生しました。",
-     "show": "ガザ地区で豪雨が発生しました。"
-    },
-    {
-     "say": "避難民が暮らすテントが浸水する被害が出ています。",
-     "show": "避難民が暮らすテントが浸水する被害が出ています。"
-    }
-   ],
-   "url": "https://news.yahoo.co.jp/pickup/6601775?source=rss",
-   "link": {
-    "url": "https://news.yahoo.co.jp/pickup/6601775?source=rss",
-    "title": "ガザで豪雨 避難民のテントが浸水 - Yahoo!ニュース",
-    "site": "Yahoo!ニュース",
-    "description": "人道状況が悪化するパレスチナ自治区ガザで豪雨による浸水被害が相次ぎ、避難民が暮らすテントが浸水するなど被害が深刻になっています。",
-    "image": "https://news-pctr.c.yimg.jp/t/news-topics/images/tpc/2026/11/8/f3a57c3787839bbf99eb50fa36e44a252eaf87cecd5e879602620dedb31ed346.jpg",
-    "icon": null
-   },
-   "category_label": "一般ニュース"
-  },
-  {
-   "label": "ミッフィーコラボ新作",
-   "points": [
-    "ミッフィーコラボが登場",
-    "秋冬アイテムが勢ぞろい"
-   ],
-   "details": [
-    "「ミッフィー」と「オペークドットクリップ」のコラボが今年も登場しました。",
-    "チェック柄バッグやストールなど秋冬アイテムが揃います。"
-   ],
-   "lines": [
-    {
-     "say": "ミッフィーとオペークドットクリップのコラボが今年も登場です。",
-     "show": "ミッフィーとオペークドットクリップのコラボが今年も登場です。"
-    },
-    {
-     "say": "バッグやストールなど秋冬アイテムが揃います。",
-     "show": "バッグやストールなど秋冬アイテムが揃います。"
-    }
-   ],
-   "url": "https://animeanime.jp/article/2026/11/08/104591.html",
-   "link": {
-    "url": "https://animeanime.jp/article/2026/11/08/104591.html",
-    "title": "ミッフィー×OPAQUE.CLIPのコラボが今年も登場！ チェック柄バッグやうさぎ耳付きストールなど秋冬アイテムが勢ぞろい♪ | アニメ！アニメ！",
-    "site": "アニメ！アニメ！",
-    "description": "「ミッフィー」とファッションブランド「OPAQUE.CLIP（オペーク ドット クリップ）」のコラボレーションアイテムが今年も登場。チェック柄のバッグやポーチ、ミッフィーの耳が付いたストールなど、秋冬のお出かけにぴったりの限定アイテムを2026年11月12日より発売する。",
-    "image": "https://animeanime.jp/imgs/ogp_f/953069.jpg",
+    "url": "https://gigazine.net/news/20261108-spy-family-season4-film2/",
+    "title": "『SPY×FAMILY』TVアニメSeason 4＆劇場版第2弾の2027年展開が決定",
+    "site": "GIGAZINE",
+    "description": "「少年ジャンプ＋」連載で累計6億PV超え、コミックスの累計発行部数も4200万部超という人気を誇る『SPY×FAMILY』のTVアニメ・Season 4が2027年に放送されることが決まりました。また、劇場版第2弾も同じく2027年に公開されることが発表されました。",
+    "image": "https://i.gzn.jp/img/2026/11/08/spy-family-season4-film2/00.png",
     "icon": null
    },
    "category_label": "アニメ"
   },
   {
-   "label": "ギザ歯キャラランキング",
+   "label": "みなみけ新作アニメ",
    "points": [
-    "ギザ歯キャラランキング",
-    "1位は笑顔が特徴的"
+    "ジュウヨネンぶりの新作",
+    "過去キャスト続投"
    ],
    "details": [
-    "2026年版のギザ歯キャラランキングが発表されました。",
-    "1位には笑顔が特徴的なキャラクターが選ばれました。"
+    "ジュウヨネンぶりに新作アニメが放送されることが発表されました。",
+    "過去のキャストが続投することに歓喜の声が上がっています。"
    ],
    "lines": [
     {
-     "say": "ギザ歯キャラといえば誰でしょう。",
-     "show": "ギザ歯キャラといえば誰でしょう。"
+     "say": "続いては、みなみけの話題です。",
+     "show": "続いては「みなみけ」の話題です。"
     },
     {
-     "say": "2026年版のランキングが発表され、1位には笑顔が特徴的なキャラが選ばれました。",
-     "show": "2026年版のランキングが発表され、1位には笑顔が特徴的なキャラが選ばれました。"
+     "say": "ジュウヨネンぶりとなる新作アニメの放送が決まりました。",
+     "show": "14年ぶりとなる新作アニメの放送が決まりました。"
     }
    ],
-   "url": "https://animeanime.jp/article/2026/11/08/104584.html",
+   "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9pLWdPbi13RE56cE1PYzhORHBHOTFPVXhxdzRhQTZyZzBOVlZ0SmFwNi1OY0FlVGVmUm5hYjUzaU9rNl9wVHo0c0ZyUnNXV092ZnhvYVplT0JxNkxJd01pUnF30gFnQVVfeXFMUFY0MVk1bDVxZGlWb2hOakNGaVRkZzczVEtuOGxic2VMRHhheXRPS01UeDM4dHFmV1RZOVJVMklwQWxIUmpyVWlOS3JQaGFfdGZhWk94eVJPM2kyWjU3WWVXZk1nMTF5TQ?oc=5",
    "link": {
-    "url": "https://animeanime.jp/article/2026/11/08/104584.html",
-    "title": "“ギザ歯”キャラといえば？3位「チェンソーマン」デンジ、2位「Free!」松岡凛、1位は笑顔が特徴的な… ＜26年版＞【いい歯の日】 | アニメ！アニメ！",
-    "site": "アニメ！アニメ！",
-    "description": "アニメ！アニメ！では「“ギザ歯”キャラといえば？」と題した読者アンケートを昨年に引き続き実施しました。結果を発表します。",
-    "image": "https://animeanime.jp/imgs/ogp_f/953270.jpg",
+    "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9pLWdPbi13RE56cE1PYzhORHBHOTFPVXhxdzRhQTZyZzBOVlZ0SmFwNi1OY0FlVGVmUm5hYjUzaU9rNl9wVHo0c0ZyUnNXV092ZnhvYVplT0JxNkxJd01pUnF30gFnQVVfeXFMUFY0MVk1bDVxZGlWb2hOakNGaVRkZzczVEtuOGxic2VMRHhheXRPS01UeDM4dHFmV1RZOVJVMklwQWxIUmpyVWlOS3JQaGFfdGZhWk94eVJPM2kyWjU3WWVXZk1nMTF5TQ?oc=5",
+    "title": "14年ぶりに『みなみけ』新作アニメ放送へ、公式「過度な期待はしないでください」も過去キャスト続投に歓喜 - Infoseek",
+    "site": "\"アニメ化決定 when:2d\" - Google ニュース",
+    "description": "",
+    "image": null,
     "icon": null
    },
    "category_label": "アニメ"
   },
   {
-   "label": "キヤノンのタイマーリモコン",
+   "label": "ゆるキャン△新作",
    "points": [
-    "28年ぶりの新作",
-    "時計機能を搭載"
+    "ニセンニジュウナナ年放送",
+    "新入生が登場"
    ],
    "details": [
-    "キヤノンが28年ぶりに有線タイマーリモコン「ティーシーエヌスリー」「ティーシーイースリー」を発表しました。",
-    "待望の時計機能が搭載されています。"
+    "シーズン4がニセンニジュウナナ年4月から放送されることが決まりました。",
+    "新入生が加わった新しいメインビジュアルとピーブイが公開されています。"
    ],
    "lines": [
     {
-     "say": "キヤノンが28年ぶりに有線タイマーリモコンの新作を発表しました。",
-     "show": "キヤノンが28年ぶりに有線タイマーリモコンの新作を発表しました。"
+     "say": "ゆるキャン△のシーズン4が、ニセンニジュウナナ年4月から放送開始となります。",
+     "show": "「ゆるキャン△ SEASON4」が、2027年4月から放送開始となります。"
     },
     {
-     "say": "時計機能が搭載され、より便利になっています。",
-     "show": "時計機能が搭載され、より便利になっています。"
+     "say": "新入生が加わったメインビジュアルとピーブイも公開されました。",
+     "show": "新入生が加わったメインビジュアルとPVも公開されました。"
     }
    ],
-   "url": "https://www.gizmodo.jp/article/canon-tc-n3-tc-e3-timer-remote/",
+   "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1vQkdCQVNwZzdHbGpNdmZYbXhzeW81R2k5VGNmYi0wUE5VQVVIZHlUYVZvUFNVNXBnVEpDRXhlcllodEt3M3JGME5yVEpPUFhpd1FGUkgyWXBoLUNZQTlKcUlYaVZROWwxRjMtZdIBbEFVX3lxTE1vQkdCQVNwZzdHbGpNdmZYbXhzeW81R2k5VGNmYi0wUE5VQVVIZHlUYVZvUFNVNXBnVEpDRXhlcllodEt3M3JGME5yVEpPUFhpd1FGUkgyWXBoLUNZQTlKcUlYaVZROWwxRjMtZQ?oc=5",
    "link": {
-    "url": "https://www.gizmodo.jp/article/canon-tc-n3-tc-e3-timer-remote/",
-    "title": "28年ぶりの新作。キヤノンのタイマーリモコンが時計機能をゲット | ギズモード・ジャパン",
-    "site": "ギズモード・ジャパン",
-    "description": "キヤノンが28年ぶりに発表した有線タイマーリモコン「TC-N3」「TC-E3」の新作情報を解説します。待望の時計機能搭載や端子別の専用設計など、進化ポイントをご紹介します。",
-    "image": "https://media.loom-app.com/loom/2026/11/06/389a5aac-e4f9-40c7-8b82-a92f296bdca0/original.jpg?w=1200&amp;h=630",
+    "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1vQkdCQVNwZzdHbGpNdmZYbXhzeW81R2k5VGNmYi0wUE5VQVVIZHlUYVZvUFNVNXBnVEpDRXhlcllodEt3M3JGME5yVEpPUFhpd1FGUkgyWXBoLUNZQTlKcUlYaVZROWwxRjMtZdIBbEFVX3lxTE1vQkdCQVNwZzdHbGpNdmZYbXhzeW81R2k5VGNmYi0wUE5VQVVIZHlUYVZvUFNVNXBnVEpDRXhlcllodEt3M3JGME5yVEpPUFhpd1FGUkgyWXBoLUNZQTlKcUlYaVZROWwxRjMtZQ?oc=5",
+    "title": "「ゆるキャン△ SEASON4」27年4月放送開始、新入生が加わったメインビジュアル公開　メインPVも完成 - Infoseek",
+    "site": "\"アニメ 放送決定 続編 when:2d\" - Google ニュース",
+    "description": "",
+    "image": null,
     "icon": null
    },
-   "category_label": "ガジェット"
+   "category_label": "アニメ"
   },
   {
-   "label": "クイックシェアに機能追加",
+   "label": "学マス新キャラ",
    "points": [
-    "自動バックアップ機能",
-    "スマホからPCへ保存"
+    "ジュウイチガツジュウロクニチ実装",
+    "メイドキャラが登場"
    ],
    "details": [
-    "「クイックシェア」に自動バックアップ機能が追加されました。",
-    "アンドロイドスマホの写真をパソコンへ直接保存できます。"
+    "ジュウイチガツジュウロクニチから氷渡香名江が実装されることが決定しました。",
+    "倉本千奈に仕えるメイドというキャラクターです。"
    ],
    "lines": [
     {
-     "say": "クイックシェアに自動バックアップ機能が追加されました。",
-     "show": "クイックシェアに自動バックアップ機能が追加されました。"
+     "say": "ゲーム、学園アイドルマスターの話題です。",
+     "show": "ゲーム「学園アイドルマスター」の話題です。"
     },
     {
-     "say": "スマホの写真をパソコンへ直接保存できるようになります。",
-     "show": "スマホの写真をパソコンへ直接保存できるようになります。"
+     "say": "倉本千奈に仕えるメイド、氷渡香名江がジュウイチガツジュウロクニチに実装されることが決定しました。",
+     "show": "倉本千奈に仕えるメイド、氷渡香名江が11月16日に実装されることが決定しました。"
+    }
+   ],
+   "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFA3S0dqcjlBQ2hUMmRuYUY5M1hYbFVMWm00YUVRWHJ3clgwdkFCa1d0S1hnOFZ0aHJxRFdfMTFxd2xBZmRJLWdJNGZqRUJKMi1wNUNlYjhXcjFlZXhCVzRv?oc=5",
+   "link": {
+    "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFA3S0dqcjlBQ2hUMmRuYUY5M1hYbFVMWm00YUVRWHJ3clgwdkFCa1d0S1hnOFZ0aHJxRFdfMTFxd2xBZmRJLWdJNGZqRUJKMi1wNUNlYjhXcjFlZXhCVzRv?oc=5",
+    "title": "「学園アイドルマスター」まさかの倉本千奈に仕えるメイド「氷渡香名江」が11月16日より実装決定！【#氷渡香名江実装決定】 - ライブドアニュース",
+    "site": "\"学園アイドルマスター OR 学マス when:2d\" - Google ニュース",
+    "description": "",
+    "image": null,
+    "icon": null
+   },
+   "category_label": "ゲーム"
+  },
+  {
+   "label": "ブルアカ仕様変更",
+   "points": [
+    "ガチャ仕様を変更",
+    "議論を呼ぶ"
+   ],
+   "details": [
+    "ガチャの仕様変更が行われました。",
+    "この変更が改善なのか改悪なのか、プレイヤーの間で意見が分かれています。"
+   ],
+   "lines": [
+    {
+     "say": "ブルーアーカイブでは、ガチャ仕様の変更が話題となっています。",
+     "show": "「ブルーアーカイブ」では、ガチャ仕様の変更が話題となっています。"
+    },
+    {
+     "say": "改善か改悪か、プレイヤーの間で議論が続いています。",
+     "show": "改善か改悪か、プレイヤーの間で議論が続いています。"
+    }
+   ],
+   "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1vN3REZTN4c2prRlJBM3FEQ1QzVFRlbm44aTh2UmRXd1E4S0o0YUVWOFFzSndQLTdueXFndmtaekdRWVdZMEpmYnlUSVJNbWJ2Z3pn?oc=5",
+   "link": {
+    "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1vN3REZTN4c2prRlJBM3FEQ1QzVFRlbm44aTh2UmRXd1E4S0o0YUVWOFFzSndQLTdueXFndmtaekdRWVdZMEpmYnlUSVJNbWJ2Z3pn?oc=5",
+    "title": "【ブルアカ】ガチャ仕様変更は改善？改悪？ - AppMedia",
+    "site": "\"ブルーアーカイブ when:2d\" - Google ニュース",
+    "description": "",
+    "image": null,
+    "icon": null
+   },
+   "category_label": "ゲーム"
+  },
+  {
+   "label": "AIモデル公開",
+   "points": [
+    "オープンモデル公開",
+    "高い性能を報告"
+   ],
+   "details": [
+    "アメリカのスタートアップがリップル・ロクジュウゴビー・プレビューをリリースしました。",
+    "開発費を従来の十分の一に抑えつつ、大規模モデルを上回る性能を記録したとしています。"
+   ],
+   "lines": [
+    {
+     "say": "AI関連のニュースです。アメリカのスタートアップが、オープンモデル、リップル・ロクジュウゴビー・プレビューを公開しました。",
+     "show": "AI関連のニュースです。アメリカのスタートアップが、オープンモデル「Ripple-65B Preview」を公開しました。"
+    },
+    {
+     "say": "開発費を抑えつつ、大規模モデルを上回る性能を報告しています。",
+     "show": "開発費を抑えつつ、大規模モデルを上回る性能を報告しています。"
+    }
+   ],
+   "url": "https://gigazine.net/news/20261108-ripple-65b-preview/",
+   "link": {
+    "url": "https://gigazine.net/news/20261108-ripple-65b-preview/",
+    "title": "アメリカ産のAIでオープンモデル「Ripple-65B Preview」登場、パラメーター数10倍の大型モデルを上回る性能で開発費は10分の1",
+    "site": "GIGAZINE",
+    "description": "AIを使用してシリコンチップを設計する再帰的自己改善に取り組むアメリカのスタートアップ「Ricursive Intelligence」が、アメリカ産のオープンウェイトモデル「Ripple-65B Preview」をリリースしました。Ripple-65B Previewはエージェント型コーディングのベンチマーク「Terminal-Bench 2.1」で80.52点を記録し、より大規模なAIモデルを上回ったと報告されています。",
+    "image": "https://i.gzn.jp/img/2026/11/08/ripple-65b-preview/00.png",
+    "icon": null
+   },
+   "category_label": "PC・ガジェット"
+  },
+  {
+   "label": "Quick Share機能",
+   "points": [
+    "自動バックアップ追加",
+    "PCへ直接保存"
+   ],
+   "details": [
+    "アンドロイドのクイックシェアに自動バックアップ機能が追加されました。",
+    "スマホの写真をグーグルフォトを使わず、ウィンドウズのストレージへ直接保存できます。"
+   ],
+   "lines": [
+    {
+     "say": "アンドロイドのクイックシェアにバックアップ機能が追加されました。",
+     "show": "Androidの「Quick Share」にバックアップ機能が追加されました。"
+    },
+    {
+     "say": "スマホの写真をウィンドウズへ自動保存できるようになり、より便利になります。",
+     "show": "スマホの写真をWindowsへ自動保存できるようになり、より便利になります。"
     }
    ],
    "url": "https://www.gizmodo.jp/article/2611-quick-share-android-windows-backup/",
@@ -209,192 +240,204 @@
     "image": "https://media.loom-app.com/loom/2026/11/06/c1609171-bfce-40f4-bc9c-d6ed78050d71/original.jpg?w=1200&amp;h=630",
     "icon": null
    },
-   "category_label": "ガジェット"
+   "category_label": "PC・ガジェット"
   },
   {
-   "label": "iPhoneを「残クレ」購入",
+   "label": "東証急落",
    "points": [
-    "17万円のスマホ",
-    "残価設定型で購入"
+    "サンゼンロッピャクヨンジュウサンエン安",
+    "世界同時株安"
    ],
    "details": [
-    "17万円のアイフォーンセブンティーンを残価設定型プログラムで購入するケースを紹介。",
-    "2年後の支払額に注意が必要です。"
+    "東証の終値はサンゼンロッピャクヨンジュウサンエン安となりました。",
+    "世界同時株安の流れを受け、AI関連銘柄を中心に売りが広がりました。"
    ],
    "lines": [
     {
-     "say": "17万円のアイフォーンセブンティーンを残価設定型で購入するケースが話題です。",
-     "show": "17万円のiPhone17を残価設定型で購入するケースが話題です。"
+     "say": "経済ニュースです。東証は世界同時株安の影響を受け、終値でサンゼンロッピャクヨンジュウサンエン安となりました。",
+     "show": "経済ニュースです。東証は世界同時株安の影響を受け、終値で3643円安となりました。"
     },
     {
-     "say": "2年後の支払額には注意が必要ですね。",
-     "show": "2年後の支払額には注意が必要ですね。"
+     "say": "AI関連銘柄への売りが目立っています。",
+     "show": "AI関連銘柄への売りが目立っています。"
     }
    ],
-   "url": "https://news.yahoo.co.jp/articles/de815846edbd3207bace7f7768dd1cc5a00f946c?source=rss",
+   "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE12NzRWUlphcEM3LWlxS0ZnZlVCanRELTVDeG5rdzRmVVVFTXp1XzRrZVo1S19GUkJiNktoclVtTmthZkQ4YWlScFRtLW45Q292SmJfa1FFTmFIZ0F0TExkTFlMMA?oc=5",
    "link": {
-    "url": "https://news.yahoo.co.jp/articles/de815846edbd3207bace7f7768dd1cc5a00f946c?source=rss",
-    "title": "夫が「17万円のiPhone17」を“残クレ月3500円”で購入！ コスパが良くても2年後「3万円請求」されたら“11万4000円”…それなら普通に買って「自分のもの」にしたほうが得ではないでしょうか？（ファイナンシャルフィールド） - Yahoo!ニュース",
-    "site": "Yahoo!ニュース",
-    "description": "スマートフォンは、iPhoneを使用している人も多いでしょう。最近では1台十数万円以上するようになり、気軽には買えないのが実情です。しかし、残価設定型プログラムを活用すれば毎月の負担を抑えながら、i",
-    "image": "https://newsatcl-pctr.c.yimg.jp/t/amd-img/20261108-00010017-ffield-000-1-view.jpg?exp=10800",
+    "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE12NzRWUlphcEM3LWlxS0ZnZlVCanRELTVDeG5rdzRmVVVFTXp1XzRrZVo1S19GUkJiNktoclVtTmthZkQ4YWlScFRtLW45Q292SmJfa1FFTmFIZ0F0TExkTFlMMA?oc=5",
+    "title": "東証急落、終値は３６４３円安 世界同時株安、ＡＩ関連銘柄売り - 山陽新聞",
+    "site": "\"株式市場 続落 OR 続伸 OR 反発 OR 急落 when:1d\" - Google ニュース",
+    "description": "",
+    "image": null,
     "icon": null
    },
-   "category_label": "株・マーケット"
+   "category_label": "経済・マーケット"
   },
   {
-   "label": "コインパーキング精算機故障",
+   "label": "山でサーモン養殖",
    "points": [
-    "精算機故障で支払い不能",
-    "不正出庫の懸念"
+    "山でのサーモン養殖",
+    "ニセンニジュウハチ年にイチマントン"
    ],
    "details": [
-    "コインパーキングの精算機が故障し、料金を払えないトラブルが発生しました。",
-    "不正出庫扱いになるか不安の声があります。"
+    "山でサーモンを養殖する計画が進んでいます。",
+    "ニセンニジュウハチ年には年間イチマントンの生産を目指すとしています。"
    ],
    "lines": [
     {
-     "say": "コインパーキングの精算機が故障し、料金が払えないトラブルです。",
-     "show": "コインパーキングの精算機が故障し、料金が払えないトラブルです。"
+     "say": "最後に、ユニークな取り組みです。",
+     "show": "最後に、ユニークな取り組みです。"
     },
     {
-     "say": "不正出庫扱いになるか不安の声が上がっています。",
-     "show": "不正出庫扱いになるか不安の声が上がっています。"
+     "say": "山でサーモンを養殖する計画が進んでおり、ニセンニジュウハチ年には年間イチマントンの生産を目指すということです。",
+     "show": "山でサーモンを養殖する計画が進んでおり、2028年には年間1万トンの生産を目指すということです。"
     }
    ],
-   "url": "https://news.yahoo.co.jp/articles/3c8e23ce7e323e3cfeb1db240820ce0ba22a9aac?source=rss",
+   "url": "https://news.yahoo.co.jp/pickup/6601831?source=rss",
    "link": {
-    "url": "https://news.yahoo.co.jp/articles/3c8e23ce7e323e3cfeb1db240820ce0ba22a9aac?source=rss",
-    "title": "急いで出発したいのに、コインパーキングの精算機が故障して駐車料金を払えず困惑！ 支払う意思はあるのですが、そのまま出庫すると「不正出庫」扱いになるのでしょうか？（ファイナンシャルフィールド） - Yahoo!ニュース",
+    "url": "https://news.yahoo.co.jp/pickup/6601831?source=rss",
+    "title": "山でサーモン養殖 28年1万t生産へ - Yahoo!ニュース",
     "site": "Yahoo!ニュース",
-    "description": "コインパーキングは車で外出する際に便利ですが、出庫時に思わぬトラブルが発生することもあります。特に、急いでいる場面で精算機が故障してしまい、お金を支払いたくても支払えない状況になると、大きな焦りと不",
-    "image": "https://newsatcl-pctr.c.yimg.jp/t/amd-img/20261108-00010015-ffield-000-1-view.jpg?exp=10800",
+    "description": "津市の山中に、すしネタとして人気のアトランティックサーモンの養殖場がある。手がける企業「ピュアサーモンジャパン」が2026年5月に操業開始。海から遠く離れているものの、高度なろ過技術を用いて大量生産",
+    "image": "https://news-pctr.c.yimg.jp/t/news-topics/images/tpc/2026/11/8/4f605de208fde1d86e3c8c83ba93c2922e8ab410d91617600433f99ab0d77be7.jpg",
     "icon": null
    },
-   "category_label": "株・マーケット"
+   "category_label": "一般ニュース"
   }
  ],
- "seconds": 105.41,
+ "seconds": 140.28,
  "lines_timed": [
   {
    "start": 0.6,
-   "end": 7.296,
-   "show": "おはようございます。11月8日、日曜日の「ものラジオ」です。",
+   "end": 6.768,
+   "show": "おはようございます。11月8日日曜日、ものラジオです。",
    "part": 0
   },
   {
-   "start": 7.546,
-   "end": 11.914,
-   "show": "今朝は注目のニュースを8本、お届けします。",
+   "start": 7.018,
+   "end": 14.074,
+   "show": "今朝は注目のアニメ情報から経済の動きまで、9本のニュースをお届けします。",
    "part": 0
   },
   {
-   "start": 12.164,
-   "end": 16.364,
-   "show": "書店で男性が切りつけられる事件がありました。",
+   "start": 14.324,
+   "end": 18.74,
+   "show": "人気アニメ「SPY×FAMILY」の最新情報です。",
    "part": 1
   },
   {
-   "start": 16.614,
-   "end": 21.75,
-   "show": "警察は現場で男を逮捕し、詳しく調べています。",
+   "start": 18.99,
+   "end": 27.27,
+   "show": "2027年にテレビアニメSeason 4の放送と、劇場版第2弾の公開が決定しました。",
    "part": 1
   },
   {
-   "start": 22.0,
-   "end": 25.24,
-   "show": "ガザ地区で豪雨が発生しました。",
+   "start": 27.52,
+   "end": 31.024,
+   "show": "続いては「みなみけ」の話題です。",
    "part": 2
   },
   {
-   "start": 25.49,
-   "end": 30.122,
-   "show": "避難民が暮らすテントが浸水する被害が出ています。",
+   "start": 31.274,
+   "end": 35.978,
+   "show": "14年ぶりとなる新作アニメの放送が決まりました。",
    "part": 2
   },
   {
-   "start": 30.372,
-   "end": 35.484,
-   "show": "ミッフィーとオペークドットクリップのコラボが今年も登場です。",
+   "start": 36.228,
+   "end": 42.708,
+   "show": "「ゆるキャン△ SEASON4」が、2027年4月から放送開始となります。",
    "part": 3
   },
   {
-   "start": 35.734,
-   "end": 40.03,
-   "show": "バッグやストールなど秋冬アイテムが揃います。",
+   "start": 42.958,
+   "end": 48.454,
+   "show": "新入生が加わったメインビジュアルとPVも公開されました。",
    "part": 3
   },
   {
-   "start": 40.28,
-   "end": 43.28,
-   "show": "ギザ歯キャラといえば誰でしょう。",
+   "start": 48.704,
+   "end": 52.736,
+   "show": "ゲーム「学園アイドルマスター」の話題です。",
    "part": 4
   },
   {
-   "start": 43.53,
-   "end": 51.522,
-   "show": "2026年版のランキングが発表され、1位には笑顔が特徴的なキャラが選ばれました。",
+   "start": 52.986,
+   "end": 61.626,
+   "show": "倉本千奈に仕えるメイド、氷渡香名江が11月16日に実装されることが決定しました。",
    "part": 4
   },
   {
-   "start": 51.772,
-   "end": 57.916,
-   "show": "キヤノンが28年ぶりに有線タイマーリモコンの新作を発表しました。",
+   "start": 61.876,
+   "end": 67.084,
+   "show": "「ブルーアーカイブ」では、ガチャ仕様の変更が話題となっています。",
    "part": 5
   },
   {
-   "start": 58.166,
-   "end": 62.654,
-   "show": "時計機能が搭載され、より便利になっています。",
+   "start": 67.334,
+   "end": 72.518,
+   "show": "改善か改悪か、プレイヤーの間で議論が続いています。",
    "part": 5
   },
   {
-   "start": 62.904,
-   "end": 67.536,
-   "show": "クイックシェアに自動バックアップ機能が追加されました。",
+   "start": 72.768,
+   "end": 83.208,
+   "show": "AI関連のニュースです。アメリカのスタートアップが、オープンモデル「Ripple-65B Preview」を公開しました。",
    "part": 6
   },
   {
-   "start": 67.786,
-   "end": 72.874,
-   "show": "スマホの写真をパソコンへ直接保存できるようになります。",
+   "start": 83.458,
+   "end": 89.65,
+   "show": "開発費を抑えつつ、大規模モデルを上回る性能を報告しています。",
    "part": 6
   },
   {
-   "start": 73.124,
-   "end": 79.844,
-   "show": "17万円のiPhone17を残価設定型で購入するケースが話題です。",
+   "start": 89.9,
+   "end": 94.916,
+   "show": "Androidの「Quick Share」にバックアップ機能が追加されました。",
    "part": 7
   },
   {
-   "start": 80.094,
-   "end": 84.462,
-   "show": "2年後の支払額には注意が必要ですね。",
+   "start": 95.166,
+   "end": 101.526,
+   "show": "スマホの写真をWindowsへ自動保存できるようになり、より便利になります。",
    "part": 7
   },
   {
-   "start": 84.712,
-   "end": 90.64,
-   "show": "コインパーキングの精算機が故障し、料金が払えないトラブルです。",
+   "start": 101.776,
+   "end": 111.928,
+   "show": "経済ニュースです。東証は世界同時株安の影響を受け、終値で3643円安となりました。",
    "part": 8
   },
   {
-   "start": 90.89,
-   "end": 95.474,
-   "show": "不正出庫扱いになるか不安の声が上がっています。",
+   "start": 112.178,
+   "end": 116.09,
+   "show": "AI関連銘柄への売りが目立っています。",
    "part": 8
   },
   {
-   "start": 95.724,
-   "end": 100.428,
-   "show": "今朝は「書店での切りつけ事件」に注目しました。",
+   "start": 116.34,
+   "end": 119.844,
+   "show": "最後に、ユニークな取り組みです。",
    "part": 9
   },
   {
-   "start": 100.678,
-   "end": 105.094,
+   "start": 120.094,
+   "end": 129.502,
+   "show": "山でサーモンを養殖する計画が進んでおり、2028年には年間1万トンの生産を目指すということです。",
+   "part": 9
+  },
+  {
+   "start": 129.752,
+   "end": 135.296,
+   "show": "今朝は「SPY×FAMILY」の2027年の展開に注目しました。",
+   "part": 10
+  },
+  {
+   "start": 135.546,
+   "end": 139.962,
    "show": "それでは、今日も良い一日をお過ごしください。",
-   "part": 9
+   "part": 10
   }
  ],
  "segments": [
@@ -402,62 +445,68 @@
    "kind": "opening",
    "index": null,
    "start": 0.6,
-   "end": 12.164
+   "end": 14.324
   },
   {
    "kind": "news",
    "index": 0,
-   "start": 12.164,
-   "end": 22.0
+   "start": 14.324,
+   "end": 27.52
   },
   {
    "kind": "news",
    "index": 1,
-   "start": 22.0,
-   "end": 30.372
+   "start": 27.52,
+   "end": 36.228
   },
   {
    "kind": "news",
    "index": 2,
-   "start": 30.372,
-   "end": 40.28
+   "start": 36.228,
+   "end": 48.704
   },
   {
    "kind": "news",
    "index": 3,
-   "start": 40.28,
-   "end": 51.772
+   "start": 48.704,
+   "end": 61.876
   },
   {
    "kind": "news",
    "index": 4,
-   "start": 51.772,
-   "end": 62.904
+   "start": 61.876,
+   "end": 72.768
   },
   {
    "kind": "news",
    "index": 5,
-   "start": 62.904,
-   "end": 73.124
+   "start": 72.768,
+   "end": 89.9
   },
   {
    "kind": "news",
    "index": 6,
-   "start": 73.124,
-   "end": 84.712
+   "start": 89.9,
+   "end": 101.776
   },
   {
    "kind": "news",
    "index": 7,
-   "start": 84.712,
-   "end": 95.724
+   "start": 101.776,
+   "end": 116.34
+  },
+  {
+   "kind": "news",
+   "index": 8,
+   "start": 116.34,
+   "end": 129.752
   },
   {
    "kind": "closing",
    "index": null,
-   "start": 95.724,
-   "end": 105.344
+   "start": 129.752,
+   "end": 140.212
   }
  ],
- "made_at": "2026-11-08T14:07:01"
+ "made_at": "2026-11-08T22:18:59"
 }
