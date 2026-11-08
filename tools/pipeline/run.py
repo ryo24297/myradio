@@ -93,6 +93,7 @@ SYSTEM = """あなたは朝のニュースラジオ「ものラジオ」の台�
 - 1ニュースあたり lines は2〜3文、points は2〜3個(各20字以内)、details は points と同数(各60字以内の補足、書けなければ null)。
 - カテゴリごとの style と枚数上限を守る。重要度の高いものを選ぶ。重複は1本にまとめる。
 - opening は日付・曜日のあいさつと、きょうの本数の紹介(2文)。closing は注目の1本への言及と、あいさつ(2文)。
+- 話す文は必ず {"say": "...", "show": "..."} のオブジェクト。文字列だけの配列は不可。例: "opening": [{"say": "おはようございます、ものラジオです。", "show": "おはようございます、ものラジオです。"}]
 - 出力はJSONのみ。説明文やコードフェンスは付けない。
 スキーマ:
 {"title": "回のタイトル(25字以内)", "opening": [話す文...], "closing": [話す文...], "highlight": 注目ニュースのnews内番号(0始まり),
@@ -114,6 +115,7 @@ def build_prompt(cfg, cands, now):
 
 
 GEMINI_BASE = "https://generativelanguage.googleapis.com/v1beta"
+BAD_MODELS = set()
 
 
 def gemini_models(key):
@@ -170,14 +172,16 @@ def llm_complete(prompt):
     provider = (os.environ.get("LLM_PROVIDER") or "gemini")
     if provider == "gemini":
         key = os.environ["GEMINI_API_KEY"]
-        first = os.environ.get("GEMINI_MODEL") or "gemini-3.8-flash"
-        order = [first] + [m for m in gemini_models(key) if m != first]
-        log(f"[llm] モデル候補: {order[:6]}")
-        for model in order[:6]:
+        first = os.environ.get("GEMINI_MODEL")
+        order = ([first] if first else []) + [m for m in gemini_models(key) if m != first]
+        order = [m for m in order if m not in BAD_MODELS][:6]
+        log(f"[llm] モデル候補: {order}")
+        for model in order:
             text = gemini_try(model, prompt, key)
             if text:
                 log(f"[llm] 使用モデル: {model}")
                 return text
+            BAD_MODELS.add(model)   # 同じ実行中は二度と試さない
         raise RuntimeError("Gemini の全モデルで失敗しました(混雑中の可能性。時間をおいて再実行してください)")
     if provider == "claude":
         import anthropic
@@ -196,7 +200,7 @@ def generate_script(cfg, cands, now):
         text = llm_complete(prompt).strip()
         text = re.sub(r"^```(?:json)?|```$", "", text, flags=re.M).strip()
         try:
-            script = json.loads(text)
+            script = normalize_script(json.loads(text))
             validate_script(script, allowed)
             return script, allowed
         except Exception as e:
@@ -204,6 +208,36 @@ def generate_script(cfg, cands, now):
             log(f"[warn] 台本の検証に失敗(試行{attempt + 1}): {e}")
             prompt += f"\n\n前回の出力は次の理由で不正でした。直して再出力: {e}"
     raise SystemExit(f"台本を作れませんでした: {last_err}")
+
+
+def _line(x):
+    if isinstance(x, str):
+        return {"say": x, "show": x}
+    if isinstance(x, dict):
+        say = x.get("say") or x.get("text") or x.get("show")
+        show = x.get("show") or x.get("text") or x.get("say")
+        if say and show:
+            return {"say": str(say), "show": str(show)}
+    return x
+
+
+def normalize_script(s):
+    """モデルによる形の揺れ(文字列だけの文など)を直す。"""
+    if not isinstance(s, dict):
+        raise ValueError("JSONの最上位がオブジェクトではない")
+    for k in ("opening", "closing"):
+        if isinstance(s.get(k), (str, dict)):
+            s[k] = [s[k]]
+        s[k] = [_line(x) for x in s.get(k) or []]
+    for n in s.get("news") or []:
+        if isinstance(n.get("lines"), (str, dict)):
+            n["lines"] = [n["lines"]]
+        n["lines"] = [_line(x) for x in n.get("lines") or []]
+        if isinstance(n.get("points"), str):
+            n["points"] = [n["points"]]
+        if isinstance(n.get("details"), list) and len(n["details"]) != len(n.get("points") or []):
+            n.pop("details")   # 数が合わない補足は捨てる
+    return s
 
 
 def validate_script(s, allowed):
