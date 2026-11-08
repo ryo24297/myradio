@@ -338,7 +338,10 @@ def tts_one(text, out_path):
     if provider == "edge":
         import asyncio, edge_tts
         voice = (os.environ.get("TTS_VOICE") or "ja-JP-NanamiNeural")
-        asyncio.run(edge_tts.Communicate(text, voice).save(str(out_path)))
+        ed = _CACHE.get("edge") or {}
+        rate = os.environ.get("EDGE_RATE") or ed.get("rate", "+0%")
+        pitch = os.environ.get("EDGE_PITCH") or ed.get("pitch", "+0Hz")
+        asyncio.run(edge_tts.Communicate(text, voice, rate=rate, pitch=pitch).save(str(out_path)))
     elif provider == "openai":
         import requests
         base = os.environ.get("OPENAI_BASE_URL", "https://api.openai.com/v1")
@@ -377,7 +380,7 @@ def synthesize(script, out_mp3):
                         tts_one(line["say"], f)
                         break
                     except Exception as e:
-                        if attempt == 2:
+                        if attempt == 2 or " 429" in str(e):
                             raise
                         log(f"[warn] TTS再試行: {e}")
                         time.sleep(2)
@@ -450,6 +453,7 @@ def main():
     seconds = 0
     if not a.no_audio:
         _CACHE["style"] = cfg["episode"].get("voice_style")
+        _CACHE["edge"] = cfg["episode"].get("edge")
         out = ROOT / "audio" / f"{date}-{cfg['episode']['language']}.mp3"
         try:
             timed, segments, seconds = synthesize(script, out)
