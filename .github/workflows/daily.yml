@@ -45,5 +45,6 @@ jobs:
           git push
       - name: Publish to gh-pages
         env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           SHARE_FONT: /usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc
         run: bash tools/publish.sh
