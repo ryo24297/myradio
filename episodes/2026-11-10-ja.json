@@ -1,0 +1,512 @@
+{
+ "format": "monoradio/news-1",
+ "date": "2026-11-10",
+ "lang": "ja",
+ "title": "ものラジオ 11月10日",
+ "opening": [
+  {
+   "say": "おはようございます。11月10日火曜日、ものラジオの時間です。",
+   "show": "おはようございます。11月10日火曜日、ものラジオの時間です。"
+  },
+  {
+   "say": "きょうはアニメの続編発表や、注目の新製品など9本のニュースをお届けします。",
+   "show": "きょうはアニメの続編発表や、注目の新製品など9本のニュースをお届けします。"
+  }
+ ],
+ "closing": [
+  {
+   "say": "きょうの注目は、OpenAIが発表したレトロな携帯ゲーム機です。",
+   "show": "きょうの注目は、OpenAIが発表したレトロな携帯ゲーム機です。"
+  },
+  {
+   "say": "それでは、今日も良い一日をお過ごしください。",
+   "show": "それでは、今日も良い一日をお過ごしください。"
+  }
+ ],
+ "highlight": 4,
+ "news": [
+  {
+   "label": "みなみけ新作決定",
+   "points": [
+    "14年ぶりの新作アニメ",
+    "2027年4月放送開始"
+   ],
+   "details": [
+    "人気アニメ「みなみけ」の新作「みなみけ これから」の放送が決定しました。",
+    "放送開始は2027年4月を予定しており、ティザービジュアルとPVも公開されています。"
+   ],
+   "lines": [
+    {
+     "say": "アニメ「みなみけ」の新作、「みなみけ これから」の放送が決定しました。",
+     "show": "アニメ「みなみけ」の新作、「みなみけ これから」の放送が決定しました。"
+    },
+    {
+     "say": "14年ぶりの新作で、2027年4月から放送予定です。",
+     "show": "14年ぶりの新作で、2027年4月から放送予定です。"
+    }
+   ],
+   "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE53S2xXdS1mUThONUJTZmV5YXc2V1JLNC12UTdwMFpEdlZudkpCRUZoUnRpNWQweWE2RXAyOEhjd1llck10Sk94dGM2cXE5Z1RjY21YOTVIMUZtYmJtRWVfQ3l5cGs?oc=5",
+   "link": {
+    "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE53S2xXdS1mUThONUJTZmV5YXc2V1JLNC12UTdwMFpEdlZudkpCRUZoUnRpNWQweWE2RXAyOEhjd1llck10Sk94dGM2cXE5Z1RjY21YOTVIMUZtYmJtRWVfQ3l5cGs?oc=5",
+    "title": "「みなみけ これから」14年ぶり新作アニメが2027年4月より放送！ ティザービジュアル＆PV公開 - Infoseek",
+    "site": "\"アニメ化決定 when:2d\" - Google ニュース",
+    "description": "",
+    "image": null,
+    "icon": null
+   },
+   "category_label": "アニメ"
+  },
+  {
+   "label": "スパイファミリー続編",
+   "points": [
+    "シーズン4放送決定",
+    "劇場版第2弾も発表"
+   ],
+   "details": [
+    "人気アニメ「スパイファミリー」のシーズン4が2027年に放送されることが決まりました。",
+    "あわせて劇場版第2弾の公開も発表され、ティザービジュアルが解禁されています。"
+   ],
+   "lines": [
+    {
+     "say": "「スパイファミリー」のシーズン4が、2027年に放送されることが決まりました。",
+     "show": "「スパイファミリー」のシーズン4が、2027年に放送されることが決まりました。"
+    },
+    {
+     "say": "あわせて劇場版第2弾の公開も発表され、ティザービジュアルも解禁されています。",
+     "show": "あわせて劇場版第2弾の公開も発表され、ティザービジュアルも解禁されています。"
+    }
+   ],
+   "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1NU2dYSEVBMC16aTBXeGtGT0NwQ0pNQ1lJRzZzSFptc0dlNmJBMWFHOHdFYl8wSUg4eUZ4NnR4dWg1UmRHbFVoc2FlMVM3UFVrSkxLWm9LM09YNlU5Sy1uSTdqeVV0VnNUOTlMSjRR?oc=5",
+   "link": {
+    "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1NU2dYSEVBMC16aTBXeGtGT0NwQ0pNQ1lJRzZzSFptc0dlNmJBMWFHOHdFYl8wSUg4eUZ4NnR4dWg1UmRHbFVoc2FlMVM3UFVrSkxLWm9LM09YNlU5Sy1uSTdqeVV0VnNUOTlMSjRR?oc=5",
+    "title": "『SPY×FAMILY』Season 4、2027年放送決定＆ティザービジュアル解禁 劇場版第2弾の公開も - au Webポータル",
+    "site": "\"アニメ 放送決定 続編 when:2d\" - Google ニュース",
+    "description": "",
+    "image": null,
+    "icon": null
+   },
+   "category_label": "アニメ"
+  },
+  {
+   "label": "神さま学校アニメ化",
+   "points": [
+    "アニメ化が決定",
+    "スピリチュアルドラマ"
+   ],
+   "details": [
+    "「神さま学校の落ちこぼれ」のアニメ化が決定しました。",
+    "「薬屋のひとりごと」の作者によるスピリチュアルスクールドラマです。"
+   ],
+   "lines": [
+    {
+     "say": "「神さま学校の落ちこぼれ」のアニメ化が決定しました。",
+     "show": "「神さま学校の落ちこぼれ」のアニメ化が決定しました。"
+    },
+    {
+     "say": "「薬屋のひとりごと」の作者が手掛ける、スピリチュアルスクールドラマです。",
+     "show": "「薬屋のひとりごと」の作者が手掛ける、スピリチュアルスクールドラマです。"
+    }
+   ],
+   "url": "https://news.google.com/rss/articles/CBMi8wJBVV95cUxOT2hJMXZKOHphYUE3dmc2UDdQOXh5Y21sVDYxbVc0UURLOGxDUlFDVmNIcnl3dXdWRmp3VTJwMEdnbVlUbjNrTFdLYmVqTHRWanZIelVtdk1qOWNqeE5CYThOcWltYWdrck5NMkFyeWkzY0RSX0U4VFNDenlwRXNzMmIzNFFHemU4dk1GbkhWenQ4RDg4cHZ3TDkzZHBnQVFfU1VlcGtMa20wR19jY1JseFUxcWd0cW9keUgzQk9iRHJ6WFdxckpnNE1TMktTYXdiUlJIZ05zQUNZc1Q0SjRqUFM5bWMybE44X2s3RE0xbk9VZ1VSQkVOdHhaeDYxMnlWekhmaUh4MjZrWkk5YnkyNGh1ZlZWYms0SnBKXy05S0UyMUZZYXJzVDdjeHB3SkpyMGFnMmNqOERwME1jUjZDNnAxYy1lQndWT05sZHBTN3F5NndLdWpMSDlqLVlSQ2JLamw4azVCd0Qxbjk0WmFSbFVmbw?oc=5",
+   "link": {
+    "url": "https://news.google.com/rss/articles/CBMi8wJBVV95cUxOT2hJMXZKOHphYUE3dmc2UDdQOXh5Y21sVDYxbVc0UURLOGxDUlFDVmNIcnl3dXdWRmp3VTJwMEdnbVlUbjNrTFdLYmVqTHRWanZIelVtdk1qOWNqeE5CYThOcWltYWdrck5NMkFyeWkzY0RSX0U4VFNDenlwRXNzMmIzNFFHemU4dk1GbkhWenQ4RDg4cHZ3TDkzZHBnQVFfU1VlcGtMa20wR19jY1JseFUxcWd0cW9keUgzQk9iRHJ6WFdxckpnNE1TMktTYXdiUlJIZ05zQUNZc1Q0SjRqUFM5bWMybE44X2s3RE0xbk9VZ1VSQkVOdHhaeDYxMnlWekhmaUh4MjZrWkk5YnkyNGh1ZlZWYms0SnBKXy05S0UyMUZZYXJzVDdjeHB3SkpyMGFnMmNqOERwME1jUjZDNnAxYy1lQndWT05sZHBTN3F5NndLdWpMSDlqLVlSQ2JLamw4azVCd0Qxbjk0WmFSbFVmbw?oc=5",
+    "title": "『神さま学校の落ちこぼれ』アニメ化 『薬屋のひとりごと』作者によるスピリチュアルスクールドラマ - 山陽新聞",
+    "site": "\"アニメ化決定 when:2d\" - Google ニュース",
+    "description": "",
+    "image": null,
+    "icon": null
+   },
+   "category_label": "アニメ"
+  },
+  {
+   "label": "学マス×ローソン",
+   "points": [
+    "11月10日コラボ開始",
+    "マルチファイル配布"
+   ],
+   "details": [
+    "「学園アイドルマスター」とローソンのコラボキャンペーンが本日11月10日からスタートしました。",
+    "マルチファイルの配布や、コラボグッズの店頭販売などが実施されます。"
+   ],
+   "lines": [
+    {
+     "say": "「学園アイドルマスター」とローソンのコラボキャンペーンが、本日11月10日から始まりました。",
+     "show": "「学園アイドルマスター」とローソンのコラボキャンペーンが、本日11月10日から始まりました。"
+    },
+    {
+     "say": "マルチファイルの配布や、コラボグッズの店頭販売などが実施されます。",
+     "show": "マルチファイルの配布や、コラボグッズの店頭販売などが実施されます。"
+    }
+   ],
+   "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1raWd3TUhkejNCRkdBSkM0X1RVYVllcERpeTEtaFNQVEFlLURvV2VFX01ZemhRMlRxdzk3bHg0cEppUjVZTkQ3Qk5YdURnY180QVFIU29pMWxtTWxMdjg1d3F3NA?oc=5",
+   "link": {
+    "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1raWd3TUhkejNCRkdBSkM0X1RVYVllcERpeTEtaFNQVEFlLURvV2VFX01ZemhRMlRxdzk3bHg0cEppUjVZTkQ3Qk5YdURnY180QVFIU29pMWxtTWxMdjg1d3F3NA?oc=5",
+    "title": "『学園アイドルマスター』(学マス)×ローソンコラボキャンペーンが2026年11月10日スタート、「マルチファイル」配布や「学マス ラングリー」「コラボグッズ」店頭販売など実施。ブロマイドも登場 - コンビニ チェッカー",
+    "site": "\"学園アイドルマスター OR 学マス when:2d\" - Google ニュース",
+    "description": "",
+    "image": null,
+    "icon": null
+   },
+   "category_label": "ゲーム"
+  },
+  {
+   "label": "OpenAIゲーム機",
+   "points": [
+    "携帯ゲーム機を発表",
+    "書き込み可能カード"
+   ],
+   "details": [
+    "OpenAIとModRetroがコラボした携帯ゲーム機「ModRetro Chromatic: Codex Edition」が発表されました。",
+    "書き込み可能なカートリッジが付属し、自作ゲームで遊ぶことができます。"
+   ],
+   "lines": [
+    {
+     "say": "OpenAIとModRetroがコラボした、携帯ゲーム機が発表されました。",
+     "show": "OpenAIとModRetroがコラボした、携帯ゲーム機が発表されました。"
+    },
+    {
+     "say": "書き込み可能なカートリッジが付属し、自作ゲームで遊ぶことができます。",
+     "show": "書き込み可能なカートリッジが付属し、自作ゲームで遊ぶことができます。"
+    }
+   ],
+   "url": "https://www.gizmodo.jp/article/2611-openai-modretro-chromatic-codex-edition/",
+   "link": {
+    "url": "https://www.gizmodo.jp/article/2611-openai-modretro-chromatic-codex-edition/",
+    "title": "OpenAIが「ゲームボーイっぽいの」を発売。“書き込み可能なカートリッジ”付き、Codexで作った自作ゲームで遊べる！ | ギズモード・ジャパン",
+    "site": "ギズモード・ジャパン",
+    "description": "うおおおお、これ欲しかったんだよね！2026年11月10日、OpenAIとModRetroがコラボレーションした携帯ゲーム機「ModRetro Chromatic: Codex Edition」が発表されました。200米ドル（現在は在庫切れ",
+    "image": "https://media.loom-app.com/loom/2026/11/09/ef973d5f-43ea-4b2c-ac21-e00aac0c2012/original.png?w=1200&amp;h=630",
+    "icon": null
+   },
+   "category_label": "PC・ガジェット"
+  },
+  {
+   "label": "FSPの巨大ケース",
+   "points": [
+    "最大18台HDD搭載",
+    "11月13日発売"
+   ],
+   "details": [
+    "FSPのPCケース「U660」が11月13日に発売されます。",
+    "最大18台のHDDを搭載可能な、ワークステーション向けの大型ケースです。"
+   ],
+   "lines": [
+    {
+     "say": "FSPのPCケース「U660」が、11月13日に発売されます。",
+     "show": "FSPのPCケース「U660」が、11月13日に発売されます。"
+    },
+    {
+     "say": "最大18台のHDDを搭載できる、ワークステーション向けの大型ケースです。",
+     "show": "最大18台のHDDを搭載できる、ワークステーション向けの大型ケースです。"
+    }
+   ],
+   "url": "https://ascii.jp/elem/000/004/449/4449926/?rss",
+   "link": {
+    "url": "https://ascii.jp/elem/000/004/449/4449926/?rss",
+    "title": "HDDを最大18台搭載！ FSPのPCケース「U660」、33,200円で11月13日発売",
+    "site": "ASCII.jp",
+    "description": "FSPのPCケース「U660」が11月13日に発売される。最大18台のHDDに対応し、360mmラジエーターや420mmグラフィックスカードも搭載可能なワークステーション向け大型ケースだ。",
+    "image": "https://ascii.jp/img/2026/11/10/4549905/xl/62d4d2d4387856a0.jpg?20200122",
+    "icon": null
+   },
+   "category_label": "PC・ガジェット"
+  },
+  {
+   "label": "日経平均6万円台",
+   "points": [
+    "一時6万円台回復",
+    "AI半導体に買い"
+   ],
+   "details": [
+    "日経平均株価が一時6万円台を回復しました。",
+    "AI半導体関連銘柄への買いが広がったほか、原油価格の下落も好感されました。"
+   ],
+   "lines": [
+    {
+     "say": "日経平均株価が、一時6万円台を回復しました。",
+     "show": "日経平均株価が、一時6万円台を回復しました。"
+    },
+    {
+     "say": "AI半導体関連銘柄への買いが広がったほか、原油価格の下落も好感されています。",
+     "show": "AI半導体関連銘柄への買いが広がったほか、原油価格の下落も好感されています。"
+    }
+   ],
+   "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1MVXpyQUZRODJjNDk3YUVvb2x0dGlITjBNdUZsbHQ4RUQ0NEhlbXd4bUhHQkNoYUxuUUtteU1YTzFoSjJiMkZwZktIUjF3ZW1iM0pVMzhibUF3V1I2WlhVMzFpbWJuXzg?oc=5",
+   "link": {
+    "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1MVXpyQUZRODJjNDk3YUVvb2x0dGlITjBNdUZsbHQ4RUQ0NEhlbXd4bUhHQkNoYUxuUUtteU1YTzFoSjJiMkZwZktIUjF3ZW1iM0pVMzhibUF3V1I2WlhVMzFpbWJuXzg?oc=5",
+    "title": "日経平均、一時6万円台回復 AI半導体に買い、原油価格下落も好感 - 朝日新聞",
+    "site": "\"株式市場 続落 OR 続伸 OR 反発 OR 急落 when:1d\" - Google ニュース",
+    "description": "",
+    "image": null,
+    "icon": null
+   },
+   "category_label": "経済・マーケット"
+  },
+  {
+   "label": "NY市場反発",
+   "points": [
+    "ダウ1100ドル超上昇",
+    "AI関連株も反発"
+   ],
+   "details": [
+    "9日の米国株式市場は反発し、ダウ平均は1100ドルを超える上昇となりました。",
+    "AIや半導体関連株が反発したことが市場を押し上げました。"
+   ],
+   "lines": [
+    {
+     "say": "9日の米国株式市場は反発し、ダウ平均は1100ドルを超える上昇となりました。",
+     "show": "9日の米国株式市場は反発し、ダウ平均は1100ドルを超える上昇となりました。"
+    },
+    {
+     "say": "AIや半導体関連株が反発したことが、市場を押し上げています。",
+     "show": "AIや半導体関連株が反発したことが、市場を押し上げています。"
+    }
+   ],
+   "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE4wbGVsYVo0SG5fbVZFZmQ3SE83UFNDZGRrQzd1clcwWm9oUEJMVFlVTG0xQXNYbUQ0amZKSHZaZlFiQnNmMVJ5WG9BWHV5MWdHcE9GdWU3U3pXQ3FfbkpxeGlSNFNxTEV1Ykx3ZW5CZ2F2VzVmaUJTcG5na29WNkE?oc=5",
+   "link": {
+    "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE4wbGVsYVo0SG5fbVZFZmQ3SE83UFNDZGRrQzd1clcwWm9oUEJMVFlVTG0xQXNYbUQ0amZKSHZaZlFiQnNmMVJ5WG9BWHV5MWdHcE9GdWU3U3pXQ3FfbkpxeGlSNFNxTEV1Ykx3ZW5CZ2F2VzVmaUJTcG5na29WNkE?oc=5",
+    "title": "NY市場反発1100ドル超上昇 AIや半導体関連株反発もエヌビディアは大幅下落（TBS NEWS DIG Powered by JNN） - Yahoo!ニュース",
+    "site": "\"株式市場 続落 OR 続伸 OR 反発 OR 急落 when:1d\" - Google ニュース",
+    "description": "",
+    "image": null,
+    "icon": null
+   },
+   "category_label": "経済・マーケット"
+  },
+  {
+   "label": "学マスライブ",
+   "points": [
+    "ファイナル公演レポ",
+    "新曲や新ユニット"
+   ],
+   "details": [
+    "「学園アイドルマスター」のライブツアーファイナル公演のレポートが公開されました。",
+    "メンバー13人が集結し、新曲や新ユニット「乖轟」が披露され盛り上がりました。"
+   ],
+   "lines": [
+    {
+     "say": "「学園アイドルマスター」のライブツアーファイナル公演のレポートが公開されました。",
+     "show": "「学園アイドルマスター」のライブツアーファイナル公演のレポートが公開されました。"
+    },
+    {
+     "say": "メンバー13人が集結し、新曲や新ユニットが披露され盛り上がりました。",
+     "show": "メンバー13人が集結し、新曲や新ユニットが披露され盛り上がりました。"
+    }
+   ],
+   "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1xTDJGNmFaTjE2QzlfUmZFSjhpb2JnUkJDbEZrN3VQdkk0bkhQUlR6ajlZU0RQWWlaVk82c0VHSE5qaEFFS1lVZ2lfVXZsN2FUTWRudDREQzlUcTlDdGVJa3hmTUtaZFpOQk1za0xn?oc=5",
+   "link": {
+    "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1xTDJGNmFaTjE2QzlfUmZFSjhpb2JnUkJDbEZrN3VQdkk0bkhQUlR6ajlZU0RQWWlaVk82c0VHSE5qaEFFS1lVZ2lfVXZsN2FUTWRudDREQzlUcTlDdGVJa3hmTUtaZFpOQk1za0xn?oc=5",
+    "title": "「学マス LIVE TOUR -標-」ファイナル公演DAY1レポ――メンバー13人が集結、手毬と美鈴の新曲や新ユニット「乖轟」に大興奮 - au Webポータル",
+    "site": "\"学園アイドルマスター OR 学マス when:2d\" - Google ニュース",
+    "description": "",
+    "image": null,
+    "icon": null
+   },
+   "category_label": "ゲーム"
+  }
+ ],
+ "seconds": 138.03,
+ "lines_timed": [
+  {
+   "start": 0.6,
+   "end": 6.72,
+   "show": "おはようございます。11月10日火曜日、ものラジオの時間です。",
+   "part": 0
+  },
+  {
+   "start": 6.97,
+   "end": 14.026,
+   "show": "きょうはアニメの続編発表や、注目の新製品など9本のニュースをお届けします。",
+   "part": 0
+  },
+  {
+   "start": 14.276,
+   "end": 19.892,
+   "show": "アニメ「みなみけ」の新作、「みなみけ これから」の放送が決定しました。",
+   "part": 1
+  },
+  {
+   "start": 20.142,
+   "end": 25.926,
+   "show": "14年ぶりの新作で、2027年4月から放送予定です。",
+   "part": 1
+  },
+  {
+   "start": 26.176,
+   "end": 32.416,
+   "show": "「スパイファミリー」のシーズン4が、2027年に放送されることが決まりました。",
+   "part": 2
+  },
+  {
+   "start": 32.666,
+   "end": 39.266,
+   "show": "あわせて劇場版第2弾の公開も発表され、ティザービジュアルも解禁されています。",
+   "part": 2
+  },
+  {
+   "start": 39.516,
+   "end": 43.788,
+   "show": "「神さま学校の落ちこぼれ」のアニメ化が決定しました。",
+   "part": 3
+  },
+  {
+   "start": 44.038,
+   "end": 49.342,
+   "show": "「薬屋のひとりごと」の作者が手掛ける、スピリチュアルスクールドラマです。",
+   "part": 3
+  },
+  {
+   "start": 49.592,
+   "end": 56.672,
+   "show": "「学園アイドルマスター」とローソンのコラボキャンペーンが、本日11月10日から始まりました。",
+   "part": 4
+  },
+  {
+   "start": 56.922,
+   "end": 62.418,
+   "show": "マルチファイルの配布や、コラボグッズの店頭販売などが実施されます。",
+   "part": 4
+  },
+  {
+   "start": 62.668,
+   "end": 68.476,
+   "show": "OpenAIとModRetroがコラボした、携帯ゲーム機が発表されました。",
+   "part": 5
+  },
+  {
+   "start": 68.726,
+   "end": 74.39,
+   "show": "書き込み可能なカートリッジが付属し、自作ゲームで遊ぶことができます。",
+   "part": 5
+  },
+  {
+   "start": 74.64,
+   "end": 81.528,
+   "show": "FSPのPCケース「U660」が、11月13日に発売されます。",
+   "part": 6
+  },
+  {
+   "start": 81.778,
+   "end": 88.426,
+   "show": "最大18台のHDDを搭載できる、ワークステーション向けの大型ケースです。",
+   "part": 6
+  },
+  {
+   "start": 88.676,
+   "end": 93.74,
+   "show": "日経平均株価が、一時6万円台を回復しました。",
+   "part": 7
+  },
+  {
+   "start": 93.99,
+   "end": 101.142,
+   "show": "AI半導体関連銘柄への買いが広がったほか、原油価格の下落も好感されています。",
+   "part": 7
+  },
+  {
+   "start": 101.392,
+   "end": 108.784,
+   "show": "9日の米国株式市場は反発し、ダウ平均は1100ドルを超える上昇となりました。",
+   "part": 8
+  },
+  {
+   "start": 109.034,
+   "end": 114.962,
+   "show": "AIや半導体関連株が反発したことが、市場を押し上げています。",
+   "part": 8
+  },
+  {
+   "start": 115.212,
+   "end": 121.044,
+   "show": "「学園アイドルマスター」のライブツアーファイナル公演のレポートが公開されました。",
+   "part": 9
+  },
+  {
+   "start": 121.294,
+   "end": 127.486,
+   "show": "メンバー13人が集結し、新曲や新ユニットが披露され盛り上がりました。",
+   "part": 9
+  },
+  {
+   "start": 127.736,
+   "end": 133.448,
+   "show": "きょうの注目は、OpenAIが発表したレトロな携帯ゲーム機です。",
+   "part": 10
+  },
+  {
+   "start": 133.698,
+   "end": 137.778,
+   "show": "それでは、今日も良い一日をお過ごしください。",
+   "part": 10
+  }
+ ],
+ "segments": [
+  {
+   "kind": "opening",
+   "index": null,
+   "start": 0.6,
+   "end": 14.276
+  },
+  {
+   "kind": "news",
+   "index": 0,
+   "start": 14.276,
+   "end": 26.176
+  },
+  {
+   "kind": "news",
+   "index": 1,
+   "start": 26.176,
+   "end": 39.516
+  },
+  {
+   "kind": "news",
+   "index": 2,
+   "start": 39.516,
+   "end": 49.592
+  },
+  {
+   "kind": "news",
+   "index": 3,
+   "start": 49.592,
+   "end": 62.668
+  },
+  {
+   "kind": "news",
+   "index": 4,
+   "start": 62.668,
+   "end": 74.64
+  },
+  {
+   "kind": "news",
+   "index": 5,
+   "start": 74.64,
+   "end": 88.676
+  },
+  {
+   "kind": "news",
+   "index": 6,
+   "start": 88.676,
+   "end": 101.392
+  },
+  {
+   "kind": "news",
+   "index": 7,
+   "start": 101.392,
+   "end": 115.212
+  },
+  {
+   "kind": "news",
+   "index": 8,
+   "start": 115.212,
+   "end": 127.736
+  },
+  {
+   "kind": "closing",
+   "index": null,
+   "start": 127.736,
+   "end": 138.028
+  }
+ ],
+ "made_at": "2026-11-10T11:51:14"
+}

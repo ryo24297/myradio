@@ -1,0 +1,512 @@
+{
+ "format": "monoradio/news-1",
+ "date": "2026-11-11",
+ "lang": "ja",
+ "title": "11月11日 水曜日のものラジオ",
+ "opening": [
+  {
+   "say": "おはようございます、ものラジオです。",
+   "show": "おはようございます、ものラジオです。"
+  },
+  {
+   "say": "11月11日水曜日、きょうは9本のニュースをお届けします。",
+   "show": "11月11日水曜日、きょうは9本のニュースをお届けします。"
+  }
+ ],
+ "closing": [
+  {
+   "say": "きょうの注目は、AMDの次世代サーバー向けCPUの出荷開始です。",
+   "show": "きょうの注目は、AMDの次世代サーバー向けCPUの出荷開始です。"
+  },
+  {
+   "say": "それでは、今日も一日頑張りましょう。",
+   "show": "それでは、今日も一日頑張りましょう。"
+  }
+ ],
+ "highlight": 6,
+ "news": [
+  {
+   "label": "Destiny Unchain Onlineアニメ化",
+   "points": [
+    "VRMMOバトルファンタジー",
+    "アニメ化が決定"
+   ],
+   "details": [
+    "漫画『Destiny Unchain Online』のアニメ化が発表されました。",
+    "VRMMOを舞台にしたバトルファンタジー作品です。"
+   ],
+   "lines": [
+    {
+     "say": "漫画『デスティニー・アンチェイン・オンライン』のアニメ化が決定しました。",
+     "show": "漫画『Destiny Unchain Online』のアニメ化が決定しました。"
+    },
+    {
+     "say": "VRMMOを舞台にしたバトルファンタジー作品として注目されています。",
+     "show": "VRMMOを舞台にしたバトルファンタジー作品として注目されています。"
+    }
+   ],
+   "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNSWc3U2NOZE52TFd3a29tRlZVSXVkcjlqRVVSdm1tbXRNMENHUWl6TXV1VGNoREx4MTV5UHJOMHFieFJGZE1KMXVMcFZZS05lM1dBLWRJMnVNSWt3Mjg5ZWNIaW5zVk9OeTV0RFhnY3pfZ1VFQ3BqUE5CQ3RyTFBpRmJZX0I0aURxTWc?oc=5",
+   "link": {
+    "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNSWc3U2NOZE52TFd3a29tRlZVSXVkcjlqRVVSdm1tbXRNMENHUWl6TXV1VGNoREx4MTV5UHJOMHFieFJGZE1KMXVMcFZZS05lM1dBLWRJMnVNSWt3Mjg5ZWNIaW5zVk9OeTV0RFhnY3pfZ1VFQ3BqUE5CQ3RyTFBpRmJZX0I0aURxTWc?oc=5",
+    "title": "漫画『Destiny Unchain Online』アニメ化決定 VRMMOバトルファンタジー - 山陽新聞",
+    "site": "\"アニメ化決定 when:2d\" - Google ニュース",
+    "description": "",
+    "image": null,
+    "icon": null
+   },
+   "category_label": "アニメ"
+  },
+  {
+   "label": "柊さんちの吸血事情アニメ化",
+   "points": [
+    "吉河美希原作",
+    "アニメ化決定"
+   ],
+   "details": [
+    "『柊さんちの吸血事情』のアニメ化が決定しました。",
+    "原作者の吉河美希さんは、ダークで耽美な世界観がテーマと語っています。"
+   ],
+   "lines": [
+    {
+     "say": "『柊さんちの吸血事情』のアニメ化が決定しました。",
+     "show": "『柊さんちの吸血事情』のアニメ化が決定しました。"
+    },
+    {
+     "say": "原作者の吉河美希さんは、ダークで耽美な世界観がテーマだと語っています。",
+     "show": "原作者の吉河美希さんは、ダークで耽美な世界観がテーマだと語っています。"
+    }
+   ],
+   "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1nS3Y5cDBlWEFtQkNYTVJwd0lkeDRPSWpFOEFkVFJTU1hKMG1IellVVjJPbXkwem1WRUV3VWQzV2dRSERVa0pETUV3b2ZCek5CU2hqZmJ3THNqdGhoLUdxUFY0WWJldXNkelJKZ0s2WFF3RWw0dzNv?oc=5",
+   "link": {
+    "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1nS3Y5cDBlWEFtQkNYTVJwd0lkeDRPSWpFOEFkVFJTU1hKMG1IellVVjJPbXkwem1WRUV3VWQzV2dRSERVa0pETUV3b2ZCek5CU2hqZmJ3THNqdGhoLUdxUFY0WWJldXNkelJKZ0s2WFF3RWw0dzNv?oc=5",
+    "title": "『柊さんちの吸血事情』アニメ化決定 原作者・吉河美希「ダークで耽美な世界観がテーマ」 - 山陽新聞",
+    "site": "\"アニメ化決定 when:2d\" - Google ニュース",
+    "description": "",
+    "image": null,
+    "icon": null
+   },
+   "category_label": "アニメ"
+  },
+  {
+   "label": "桜蘭高校ホスト部イベント",
+   "points": [
+    "アニメ化20周年",
+    "来年2月開催"
+   ],
+   "details": [
+    "『桜蘭高校ホスト部』のアニメ化20周年イベントが、来年2月14日に開催されます。",
+    "坂本真綾さんと宮野真守さんが登壇予定です。"
+   ],
+   "lines": [
+    {
+     "say": "『桜蘭高校ホスト部』のアニメ化20周年イベントが、来年2月14日に開催されます。",
+     "show": "『桜蘭高校ホスト部』のアニメ化20周年イベントが、来年2月14日に開催されます。"
+    },
+    {
+     "say": "坂本真綾さんと宮野真守さんが登壇する予定です。",
+     "show": "坂本真綾さんと宮野真守さんが登壇する予定です。"
+    }
+   ],
+   "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBxdHYtTVFlaTUxSV9RLXAwUmQzVWZDNVBsdU9TcUJ3UURfNHl0SlgzdWZpT0ZDMFdjdGFmaFZtZFVVY0xYSVBFWU9WY1p3Y28?oc=5",
+   "link": {
+    "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBxdHYtTVFlaTUxSV9RLXAwUmQzVWZDNVBsdU9TcUJ3UURfNHl0SlgzdWZpT0ZDMFdjdGFmaFZtZFVVY0xYSVBFWU9WY1p3Y28?oc=5",
+    "title": "『桜蘭高校ホスト部』アニメ化20周年イベント、来年2・14開催 坂本真綾＆宮野真守が登壇 - オリコンニュース",
+    "site": "\"アニメ化決定 when:2d\" - Google ニュース",
+    "description": "",
+    "image": null,
+    "icon": null
+   },
+   "category_label": "アニメ"
+  },
+  {
+   "label": "学マス×ローソンコラボ",
+   "points": [
+    "グッズ店頭発売",
+    "予約販売も"
+   ],
+   "details": [
+    "『学園アイドルマスター』とローソンのコラボグッズが11月10日に発売されました。",
+    "アクスタや缶バッジなどが登場しています。"
+   ],
+   "lines": [
+    {
+     "say": "『学園アイドルマスター』とローソンのコラボグッズが11月10日に発売されました。",
+     "show": "『学園アイドルマスター』とローソンのコラボグッズが11月10日に発売されました。"
+    },
+    {
+     "say": "アクスタや缶バッジなどが店頭に並んでいます。",
+     "show": "アクスタや缶バッジなどが店頭に並んでいます。"
+    }
+   ],
+   "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9KVDBFUzlqT2Z0MlYtbGFtTDRRRllHV1RUbmZ5WEVtN3ZMd1pOMnBtcC1zZ2VfaGJrMzh3YkRhZ05kX1Uxd05hS0daY2hTamVVOTJmSVVTZmI5cmNzTzV0YW9Naw?oc=5",
+   "link": {
+    "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9KVDBFUzlqT2Z0MlYtbGFtTDRRRllHV1RUbmZ5WEVtN3ZMd1pOMnBtcC1zZ2VfaGJrMzh3YkRhZ05kX1Uxd05hS0daY2hTamVVOTJmSVVTZmI5cmNzTzV0YW9Naw?oc=5",
+    "title": "『学園アイドルマスター』(学マス)×ローソンコラボ グッズが2026年11月10日店頭発売、花海咲季たちの「アクスタ」「グリッター缶バッジ」などが登場。Loppi/HMV onlineでは「担当アイドル確定! 缶バッジ5個セット」「なりきる!? からあげクン ミニぬいキーホルダー」ほかの予約販売も - コンビニ チェッカー",
+    "site": "\"学園アイドルマスター OR 学マス when:2d\" - Google ニュース",
+    "description": "",
+    "image": null,
+    "icon": null
+   },
+   "category_label": "ゲーム"
+  },
+  {
+   "label": "ブルアカ運営移管",
+   "points": [
+    "日本版運営移管",
+    "方針を明言"
+   ],
+   "details": [
+    "『ブルーアーカイブ』日本版の運営移管について、開発陣がインタビューで回答しました。",
+    "翻訳や二次創作ガイドラインは維持されます。"
+   ],
+   "lines": [
+    {
+     "say": "『ブルーアーカイブ』日本版の運営移管について、開発陣がインタビューで回答しました。",
+     "show": "『ブルーアーカイブ』日本版の運営移管について、開発陣がインタビューで回答しました。"
+    },
+    {
+     "say": "翻訳や二次創作ガイドラインは維持される方針です。",
+     "show": "翻訳や二次創作ガイドラインは維持される方針です。"
+    }
+   ],
+   "url": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE5QRTIzRkotQ05kV3pKU29hY3FLQlNJMEpNb05CeG1TUWhvRWZqLTl2NXdMUHZNd216WERhczJiNXoybkdhXzRHVkhR?oc=5",
+   "link": {
+    "url": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE5QRTIzRkotQ05kV3pKU29hY3FLQlNJMEpNb05CeG1TUWhvRWZqLTl2NXdMUHZNd216WERhczJiNXoybkdhXzRHVkhR?oc=5",
+    "title": "『ブルアカ』日本版の運営移管で何が変わる？翻訳や二次創作ガイドラインの維持を明言 - ゴゴ通信",
+    "site": "\"ブルーアーカイブ when:2d\" - Google ニュース",
+    "description": "",
+    "image": null,
+    "icon": null
+   },
+   "category_label": "ゲーム"
+  },
+  {
+   "label": "レノボ新製品発表",
+   "points": [
+    "7色展開ノートPC",
+    "RTX搭載モデルも"
+   ],
+   "details": [
+    "レノボが「IdeaPad Vibe Gen 12」と「Yoga 9n 2-in-1 Gen 11」を発表しました。",
+    "7色展開や高性能GPU搭載が特徴です。"
+   ],
+   "lines": [
+    {
+     "say": "レノボが「アイデアパッド・バイブ・ジェン12」と「ヨガ9n・2イン1・ジェン11」を発表しました。",
+     "show": "レノボが「IdeaPad Vibe Gen 12」と「Yoga 9n 2-in-1 Gen 11」を発表しました。"
+    },
+    {
+     "say": "7色展開や高性能GPU搭載が特徴となっています。",
+     "show": "7色展開や高性能GPU搭載が特徴となっています。"
+    }
+   ],
+   "url": "https://ascii.jp/elem/000/004/450/4450364/?rss",
+   "link": {
+    "url": "https://ascii.jp/elem/000/004/450/4450364/?rss",
+    "title": "レノボ、7色から選べる「IdeaPad Vibe Gen 12」とRTX Spark搭載「Yoga 9n 2-in-1 Gen 11」を発表",
+    "site": "ASCII.jp",
+    "description": "レノボが7色展開の「IdeaPad Vibe Gen 12」と、RTX Spark N1X・64GBメモリ搭載の「Yoga 9n 2-in-1 Gen 11」を発表。画面サイズやOLEDディスプレイなどの特徴、発売日、価格を紹介する。",
+    "image": "https://ascii.jp/img/2026/11/11/4550373/xl/c73322144e540a15.png?20200122",
+    "icon": null
+   },
+   "category_label": "PC・ガジェット"
+  },
+  {
+   "label": "AMD 第6世代EPYC出荷",
+   "points": [
+    "第6世代EPYC",
+    "出荷開始"
+   ],
+   "details": [
+    "AMDはデータセンター向けCPU「第6世代EPYC」の出荷を開始しました。",
+    "Xeon 6と比較して高い処理性能を実現しています。"
+   ],
+   "lines": [
+    {
+     "say": "AMDはデータセンター向けCPU「第6世代エピック」の出荷を開始しました。",
+     "show": "AMDはデータセンター向けCPU「第6世代EPYC」の出荷を開始しました。"
+    },
+    {
+     "say": "Xeon 6と比較して高い処理性能を実現しているとのことです。",
+     "show": "Xeon 6と比較して高い処理性能を実現しているとのことです。"
+    }
+   ],
+   "url": "https://pc.watch.impress.co.jp/docs/news/2155286.html",
+   "link": {
+    "url": "https://pc.watch.impress.co.jp/docs/news/2155286.html",
+    "title": "AMD、第6世代EPYC「9006 SP7」出荷開始。Xeon 6比最大3.3倍速  ",
+    "site": "PC Watch",
+    "description": "　AMDは11月10日(米国時間、日本時間11月11日未明)に報道発表を行ない、同社の次世代データセンター向けCPU「第6世代EPYC」(開発コードネーム: Venice、ヴェニス)の詳細と、最初の製品となるVenice SP7こと「9006 SP7」の出荷開始を明らかにした。",
+    "image": "https://pc.watch.impress.co.jp/img/pcw/list/2155/286/001.jpg",
+    "icon": null
+   },
+   "category_label": "PC・ガジェット"
+  },
+  {
+   "label": "ドル円相場158円台",
+   "points": [
+    "ドル高円安進行",
+    "158円台"
+   ],
+   "details": [
+    "外為市場では、1ドル158円74銭前後で推移しています。",
+    "大幅なドル高・円安の状況が続いています。"
+   ],
+   "lines": [
+    {
+     "say": "外為市場では、1ドル158円74銭前後で推移しています。",
+     "show": "外為市場では、1ドル158円74銭前後で推移しています。"
+    },
+    {
+     "say": "大幅なドル高・円安の状況が続いています。",
+     "show": "大幅なドル高・円安の状況が続いています。"
+    }
+   ],
+   "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5Xd1JvZDE1bGdOSDAtQWhmVjIzUjg0NEsxS0NOaVUyMFVzc2x1cVc2SFdrTk16LWVfNDhuQ2ZfdTZaT3hiLUN1LXIzcjF6Sm1nN1E?oc=5",
+   "link": {
+    "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5Xd1JvZDE1bGdOSDAtQWhmVjIzUjg0NEsxS0NOaVUyMFVzc2x1cVc2SFdrTk16LWVfNDhuQ2ZfdTZaT3hiLUN1LXIzcjF6Sm1nN1E?oc=5",
+    "title": "外為：1ドル158円74銭前後と大幅なドル高・円安で推移 - 株探",
+    "site": "\"円相場 円安 OR 円高 ニュース when:1d\" - Google ニュース",
+    "description": "",
+    "image": null,
+    "icon": null
+   },
+   "category_label": "経済・マーケット"
+  },
+  {
+   "label": "日経平均続伸",
+   "points": [
+    "日経平均が続伸",
+    "需給改善期待"
+   ],
+   "details": [
+    "日経平均株価は続伸で取引が始まりました。",
+    "市場では需給改善への期待が相場を支えています。"
+   ],
+   "lines": [
+    {
+     "say": "日経平均株価は続伸で取引が始まりました。",
+     "show": "日経平均株価は続伸で取引が始まりました。"
+    },
+    {
+     "say": "市場では需給改善への期待が相場を支えています。",
+     "show": "市場では需給改善への期待が相場を支えています。"
+    }
+   ],
+   "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1lY082ZXZjWEYtcF85SkhkSkVLM3FfbDVlc0ZhZ1UzUFo1VlBxV1U1bUwxQXFSbnVmZDVCazhaUGhuVTVwNS1tN21qU2FYSzBKTWdPam1STG9ySkZEd2UyRkpjWHVUT2xINFdUVA?oc=5",
+   "link": {
+    "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1lY082ZXZjWEYtcF85SkhkSkVLM3FfbDVlc0ZhZ1UzUFo1VlBxV1U1bUwxQXFSbnVmZDVCazhaUGhuVTVwNS1tN21qU2FYSzBKTWdPam1STG9ySkZEd2UyRkpjWHVUT2xINFdUVA?oc=5",
+    "title": "日経平均株価、続伸で始まる 需給改善期待が支え - 日本経済新聞",
+    "site": "\"株式市場 続落 OR 続伸 OR 反発 OR 急落 when:1d\" - Google ニュース",
+    "description": "",
+    "image": null,
+    "icon": null
+   },
+   "category_label": "経済・マーケット"
+  }
+ ],
+ "seconds": 124.8,
+ "lines_timed": [
+  {
+   "start": 0.6,
+   "end": 3.72,
+   "show": "おはようございます、ものラジオです。",
+   "part": 0
+  },
+  {
+   "start": 3.97,
+   "end": 9.826,
+   "show": "11月11日水曜日、きょうは9本のニュースをお届けします。",
+   "part": 0
+  },
+  {
+   "start": 10.076,
+   "end": 15.308,
+   "show": "漫画『Destiny Unchain Online』のアニメ化が決定しました。",
+   "part": 1
+  },
+  {
+   "start": 15.558,
+   "end": 20.55,
+   "show": "VRMMOを舞台にしたバトルファンタジー作品として注目されています。",
+   "part": 1
+  },
+  {
+   "start": 20.8,
+   "end": 25.432,
+   "show": "『柊さんちの吸血事情』のアニメ化が決定しました。",
+   "part": 2
+  },
+  {
+   "start": 25.682,
+   "end": 31.85,
+   "show": "原作者の吉河美希さんは、ダークで耽美な世界観がテーマだと語っています。",
+   "part": 2
+  },
+  {
+   "start": 32.1,
+   "end": 39.348,
+   "show": "『桜蘭高校ホスト部』のアニメ化20周年イベントが、来年2月14日に開催されます。",
+   "part": 3
+  },
+  {
+   "start": 39.598,
+   "end": 44.278,
+   "show": "坂本真綾さんと宮野真守さんが登壇する予定です。",
+   "part": 3
+  },
+  {
+   "start": 44.528,
+   "end": 50.744,
+   "show": "『学園アイドルマスター』とローソンのコラボグッズが11月10日に発売されました。",
+   "part": 4
+  },
+  {
+   "start": 50.994,
+   "end": 54.954,
+   "show": "アクスタや缶バッジなどが店頭に並んでいます。",
+   "part": 4
+  },
+  {
+   "start": 55.204,
+   "end": 61.996,
+   "show": "『ブルーアーカイブ』日本版の運営移管について、開発陣がインタビューで回答しました。",
+   "part": 5
+  },
+  {
+   "start": 62.246,
+   "end": 66.926,
+   "show": "翻訳や二次創作ガイドラインは維持される方針です。",
+   "part": 5
+  },
+  {
+   "start": 67.176,
+   "end": 75.696,
+   "show": "レノボが「IdeaPad Vibe Gen 12」と「Yoga 9n 2-in-1 Gen 11」を発表しました。",
+   "part": 6
+  },
+  {
+   "start": 75.946,
+   "end": 81.418,
+   "show": "7色展開や高性能GPU搭載が特徴となっています。",
+   "part": 6
+  },
+  {
+   "start": 81.668,
+   "end": 88.244,
+   "show": "AMDはデータセンター向けCPU「第6世代EPYC」の出荷を開始しました。",
+   "part": 7
+  },
+  {
+   "start": 88.494,
+   "end": 93.87,
+   "show": "Xeon 6と比較して高い処理性能を実現しているとのことです。",
+   "part": 7
+  },
+  {
+   "start": 94.12,
+   "end": 100.456,
+   "show": "外為市場では、1ドル158円74銭前後で推移しています。",
+   "part": 8
+  },
+  {
+   "start": 100.706,
+   "end": 105.026,
+   "show": "大幅なドル高・円安の状況が続いています。",
+   "part": 8
+  },
+  {
+   "start": 105.276,
+   "end": 109.764,
+   "show": "日経平均株価は続伸で取引が始まりました。",
+   "part": 9
+  },
+  {
+   "start": 110.014,
+   "end": 114.526,
+   "show": "市場では需給改善への期待が相場を支えています。",
+   "part": 9
+  },
+  {
+   "start": 114.776,
+   "end": 120.752,
+   "show": "きょうの注目は、AMDの次世代サーバー向けCPUの出荷開始です。",
+   "part": 10
+  },
+  {
+   "start": 121.002,
+   "end": 124.554,
+   "show": "それでは、今日も一日頑張りましょう。",
+   "part": 10
+  }
+ ],
+ "segments": [
+  {
+   "kind": "opening",
+   "index": null,
+   "start": 0.6,
+   "end": 10.076
+  },
+  {
+   "kind": "news",
+   "index": 0,
+   "start": 10.076,
+   "end": 20.8
+  },
+  {
+   "kind": "news",
+   "index": 1,
+   "start": 20.8,
+   "end": 32.1
+  },
+  {
+   "kind": "news",
+   "index": 2,
+   "start": 32.1,
+   "end": 44.528
+  },
+  {
+   "kind": "news",
+   "index": 3,
+   "start": 44.528,
+   "end": 55.204
+  },
+  {
+   "kind": "news",
+   "index": 4,
+   "start": 55.204,
+   "end": 67.176
+  },
+  {
+   "kind": "news",
+   "index": 5,
+   "start": 67.176,
+   "end": 81.668
+  },
+  {
+   "kind": "news",
+   "index": 6,
+   "start": 81.668,
+   "end": 94.12
+  },
+  {
+   "kind": "news",
+   "index": 7,
+   "start": 94.12,
+   "end": 105.276
+  },
+  {
+   "kind": "news",
+   "index": 8,
+   "start": 105.276,
+   "end": 114.776
+  },
+  {
+   "kind": "closing",
+   "index": null,
+   "start": 114.776,
+   "end": 124.804
+  }
+ ],
+ "made_at": "2026-11-11T09:46:05"
+}

@@ -1,0 +1,6 @@
+feedparser>=6.0
+requests>=2.31
+anthropic>=0.40
+edge-tts>=6.1
+Pillow>=10.0
+resvg-py>=0.1

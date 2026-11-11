@@ -1,0 +1,512 @@
+{
+ "format": "monoradio/news-1",
+ "date": "2026-11-08",
+ "lang": "ja",
+ "title": "ものラジオ 11月8日号",
+ "opening": [
+  {
+   "say": "おはようございます。11月8日日曜日、ものラジオです。",
+   "show": "おはようございます。11月8日日曜日、ものラジオです。"
+  },
+  {
+   "say": "今朝は注目のアニメ情報から経済の動きまで、9本のニュースをお届けします。",
+   "show": "今朝は注目のアニメ情報から経済の動きまで、9本のニュースをお届けします。"
+  }
+ ],
+ "closing": [
+  {
+   "say": "今朝はスパイファミリーの2027年の展開に注目しました。",
+   "show": "今朝は「SPY×FAMILY」の2027年の展開に注目しました。"
+  },
+  {
+   "say": "それでは、今日も良い一日をお過ごしください。",
+   "show": "それでは、今日も良い一日をお過ごしください。"
+  }
+ ],
+ "highlight": 0,
+ "news": [
+  {
+   "label": "スパイファミリー新展開",
+   "points": [
+    "シーズン4放送決定",
+    "劇場版第2弾公開"
+   ],
+   "details": [
+    "テレビアニメのシーズン4がニセンニジュウナナネンに放送されます。",
+    "劇場版の第2弾も同じくニセンニジュウナナネンに公開予定です。"
+   ],
+   "lines": [
+    {
+     "say": "人気アニメ、スパイファミリーの最新情報です。",
+     "show": "人気アニメ「SPY×FAMILY」の最新情報です。"
+    },
+    {
+     "say": "ニセンニジュウナナ年にテレビアニメシーズン4の放送と、劇場版第2弾の公開が決定しました。",
+     "show": "2027年にテレビアニメSeason 4の放送と、劇場版第2弾の公開が決定しました。"
+    }
+   ],
+   "url": "https://gigazine.net/news/20261108-spy-family-season4-film2/",
+   "link": {
+    "url": "https://gigazine.net/news/20261108-spy-family-season4-film2/",
+    "title": "『SPY×FAMILY』TVアニメSeason 4＆劇場版第2弾の2027年展開が決定",
+    "site": "GIGAZINE",
+    "description": "「少年ジャンプ＋」連載で累計6億PV超え、コミックスの累計発行部数も4200万部超という人気を誇る『SPY×FAMILY』のTVアニメ・Season 4が2027年に放送されることが決まりました。また、劇場版第2弾も同じく2027年に公開されることが発表されました。",
+    "image": "https://i.gzn.jp/img/2026/11/08/spy-family-season4-film2/00.png",
+    "icon": null
+   },
+   "category_label": "アニメ"
+  },
+  {
+   "label": "みなみけ新作アニメ",
+   "points": [
+    "ジュウヨネンぶりの新作",
+    "過去キャスト続投"
+   ],
+   "details": [
+    "ジュウヨネンぶりに新作アニメが放送されることが発表されました。",
+    "過去のキャストが続投することに歓喜の声が上がっています。"
+   ],
+   "lines": [
+    {
+     "say": "続いては、みなみけの話題です。",
+     "show": "続いては「みなみけ」の話題です。"
+    },
+    {
+     "say": "ジュウヨネンぶりとなる新作アニメの放送が決まりました。",
+     "show": "14年ぶりとなる新作アニメの放送が決まりました。"
+    }
+   ],
+   "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9pLWdPbi13RE56cE1PYzhORHBHOTFPVXhxdzRhQTZyZzBOVlZ0SmFwNi1OY0FlVGVmUm5hYjUzaU9rNl9wVHo0c0ZyUnNXV092ZnhvYVplT0JxNkxJd01pUnF30gFnQVVfeXFMUFY0MVk1bDVxZGlWb2hOakNGaVRkZzczVEtuOGxic2VMRHhheXRPS01UeDM4dHFmV1RZOVJVMklwQWxIUmpyVWlOS3JQaGFfdGZhWk94eVJPM2kyWjU3WWVXZk1nMTF5TQ?oc=5",
+   "link": {
+    "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9pLWdPbi13RE56cE1PYzhORHBHOTFPVXhxdzRhQTZyZzBOVlZ0SmFwNi1OY0FlVGVmUm5hYjUzaU9rNl9wVHo0c0ZyUnNXV092ZnhvYVplT0JxNkxJd01pUnF30gFnQVVfeXFMUFY0MVk1bDVxZGlWb2hOakNGaVRkZzczVEtuOGxic2VMRHhheXRPS01UeDM4dHFmV1RZOVJVMklwQWxIUmpyVWlOS3JQaGFfdGZhWk94eVJPM2kyWjU3WWVXZk1nMTF5TQ?oc=5",
+    "title": "14年ぶりに『みなみけ』新作アニメ放送へ、公式「過度な期待はしないでください」も過去キャスト続投に歓喜 - Infoseek",
+    "site": "\"アニメ化決定 when:2d\" - Google ニュース",
+    "description": "",
+    "image": null,
+    "icon": null
+   },
+   "category_label": "アニメ"
+  },
+  {
+   "label": "ゆるキャン△新作",
+   "points": [
+    "ニセンニジュウナナ年放送",
+    "新入生が登場"
+   ],
+   "details": [
+    "シーズン4がニセンニジュウナナ年4月から放送されることが決まりました。",
+    "新入生が加わった新しいメインビジュアルとピーブイが公開されています。"
+   ],
+   "lines": [
+    {
+     "say": "ゆるキャン△のシーズン4が、ニセンニジュウナナ年4月から放送開始となります。",
+     "show": "「ゆるキャン△ SEASON4」が、2027年4月から放送開始となります。"
+    },
+    {
+     "say": "新入生が加わったメインビジュアルとピーブイも公開されました。",
+     "show": "新入生が加わったメインビジュアルとPVも公開されました。"
+    }
+   ],
+   "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1vQkdCQVNwZzdHbGpNdmZYbXhzeW81R2k5VGNmYi0wUE5VQVVIZHlUYVZvUFNVNXBnVEpDRXhlcllodEt3M3JGME5yVEpPUFhpd1FGUkgyWXBoLUNZQTlKcUlYaVZROWwxRjMtZdIBbEFVX3lxTE1vQkdCQVNwZzdHbGpNdmZYbXhzeW81R2k5VGNmYi0wUE5VQVVIZHlUYVZvUFNVNXBnVEpDRXhlcllodEt3M3JGME5yVEpPUFhpd1FGUkgyWXBoLUNZQTlKcUlYaVZROWwxRjMtZQ?oc=5",
+   "link": {
+    "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1vQkdCQVNwZzdHbGpNdmZYbXhzeW81R2k5VGNmYi0wUE5VQVVIZHlUYVZvUFNVNXBnVEpDRXhlcllodEt3M3JGME5yVEpPUFhpd1FGUkgyWXBoLUNZQTlKcUlYaVZROWwxRjMtZdIBbEFVX3lxTE1vQkdCQVNwZzdHbGpNdmZYbXhzeW81R2k5VGNmYi0wUE5VQVVIZHlUYVZvUFNVNXBnVEpDRXhlcllodEt3M3JGME5yVEpPUFhpd1FGUkgyWXBoLUNZQTlKcUlYaVZROWwxRjMtZQ?oc=5",
+    "title": "「ゆるキャン△ SEASON4」27年4月放送開始、新入生が加わったメインビジュアル公開　メインPVも完成 - Infoseek",
+    "site": "\"アニメ 放送決定 続編 when:2d\" - Google ニュース",
+    "description": "",
+    "image": null,
+    "icon": null
+   },
+   "category_label": "アニメ"
+  },
+  {
+   "label": "学マス新キャラ",
+   "points": [
+    "ジュウイチガツジュウロクニチ実装",
+    "メイドキャラが登場"
+   ],
+   "details": [
+    "ジュウイチガツジュウロクニチから氷渡香名江が実装されることが決定しました。",
+    "倉本千奈に仕えるメイドというキャラクターです。"
+   ],
+   "lines": [
+    {
+     "say": "ゲーム、学園アイドルマスターの話題です。",
+     "show": "ゲーム「学園アイドルマスター」の話題です。"
+    },
+    {
+     "say": "倉本千奈に仕えるメイド、氷渡香名江がジュウイチガツジュウロクニチに実装されることが決定しました。",
+     "show": "倉本千奈に仕えるメイド、氷渡香名江が11月16日に実装されることが決定しました。"
+    }
+   ],
+   "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFA3S0dqcjlBQ2hUMmRuYUY5M1hYbFVMWm00YUVRWHJ3clgwdkFCa1d0S1hnOFZ0aHJxRFdfMTFxd2xBZmRJLWdJNGZqRUJKMi1wNUNlYjhXcjFlZXhCVzRv?oc=5",
+   "link": {
+    "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFA3S0dqcjlBQ2hUMmRuYUY5M1hYbFVMWm00YUVRWHJ3clgwdkFCa1d0S1hnOFZ0aHJxRFdfMTFxd2xBZmRJLWdJNGZqRUJKMi1wNUNlYjhXcjFlZXhCVzRv?oc=5",
+    "title": "「学園アイドルマスター」まさかの倉本千奈に仕えるメイド「氷渡香名江」が11月16日より実装決定！【#氷渡香名江実装決定】 - ライブドアニュース",
+    "site": "\"学園アイドルマスター OR 学マス when:2d\" - Google ニュース",
+    "description": "",
+    "image": null,
+    "icon": null
+   },
+   "category_label": "ゲーム"
+  },
+  {
+   "label": "ブルアカ仕様変更",
+   "points": [
+    "ガチャ仕様を変更",
+    "議論を呼ぶ"
+   ],
+   "details": [
+    "ガチャの仕様変更が行われました。",
+    "この変更が改善なのか改悪なのか、プレイヤーの間で意見が分かれています。"
+   ],
+   "lines": [
+    {
+     "say": "ブルーアーカイブでは、ガチャ仕様の変更が話題となっています。",
+     "show": "「ブルーアーカイブ」では、ガチャ仕様の変更が話題となっています。"
+    },
+    {
+     "say": "改善か改悪か、プレイヤーの間で議論が続いています。",
+     "show": "改善か改悪か、プレイヤーの間で議論が続いています。"
+    }
+   ],
+   "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1vN3REZTN4c2prRlJBM3FEQ1QzVFRlbm44aTh2UmRXd1E4S0o0YUVWOFFzSndQLTdueXFndmtaekdRWVdZMEpmYnlUSVJNbWJ2Z3pn?oc=5",
+   "link": {
+    "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1vN3REZTN4c2prRlJBM3FEQ1QzVFRlbm44aTh2UmRXd1E4S0o0YUVWOFFzSndQLTdueXFndmtaekdRWVdZMEpmYnlUSVJNbWJ2Z3pn?oc=5",
+    "title": "【ブルアカ】ガチャ仕様変更は改善？改悪？ - AppMedia",
+    "site": "\"ブルーアーカイブ when:2d\" - Google ニュース",
+    "description": "",
+    "image": null,
+    "icon": null
+   },
+   "category_label": "ゲーム"
+  },
+  {
+   "label": "AIモデル公開",
+   "points": [
+    "オープンモデル公開",
+    "高い性能を報告"
+   ],
+   "details": [
+    "アメリカのスタートアップがリップル・ロクジュウゴビー・プレビューをリリースしました。",
+    "開発費を従来の十分の一に抑えつつ、大規模モデルを上回る性能を記録したとしています。"
+   ],
+   "lines": [
+    {
+     "say": "AI関連のニュースです。アメリカのスタートアップが、オープンモデル、リップル・ロクジュウゴビー・プレビューを公開しました。",
+     "show": "AI関連のニュースです。アメリカのスタートアップが、オープンモデル「Ripple-65B Preview」を公開しました。"
+    },
+    {
+     "say": "開発費を抑えつつ、大規模モデルを上回る性能を報告しています。",
+     "show": "開発費を抑えつつ、大規模モデルを上回る性能を報告しています。"
+    }
+   ],
+   "url": "https://gigazine.net/news/20261108-ripple-65b-preview/",
+   "link": {
+    "url": "https://gigazine.net/news/20261108-ripple-65b-preview/",
+    "title": "アメリカ産のAIでオープンモデル「Ripple-65B Preview」登場、パラメーター数10倍の大型モデルを上回る性能で開発費は10分の1",
+    "site": "GIGAZINE",
+    "description": "AIを使用してシリコンチップを設計する再帰的自己改善に取り組むアメリカのスタートアップ「Ricursive Intelligence」が、アメリカ産のオープンウェイトモデル「Ripple-65B Preview」をリリースしました。Ripple-65B Previewはエージェント型コーディングのベンチマーク「Terminal-Bench 2.1」で80.52点を記録し、より大規模なAIモデルを上回ったと報告されています。",
+    "image": "https://i.gzn.jp/img/2026/11/08/ripple-65b-preview/00.png",
+    "icon": null
+   },
+   "category_label": "PC・ガジェット"
+  },
+  {
+   "label": "Quick Share機能",
+   "points": [
+    "自動バックアップ追加",
+    "PCへ直接保存"
+   ],
+   "details": [
+    "アンドロイドのクイックシェアに自動バックアップ機能が追加されました。",
+    "スマホの写真をグーグルフォトを使わず、ウィンドウズのストレージへ直接保存できます。"
+   ],
+   "lines": [
+    {
+     "say": "アンドロイドのクイックシェアにバックアップ機能が追加されました。",
+     "show": "Androidの「Quick Share」にバックアップ機能が追加されました。"
+    },
+    {
+     "say": "スマホの写真をウィンドウズへ自動保存できるようになり、より便利になります。",
+     "show": "スマホの写真をWindowsへ自動保存できるようになり、より便利になります。"
+    }
+   ],
+   "url": "https://www.gizmodo.jp/article/2611-quick-share-android-windows-backup/",
+   "link": {
+    "url": "https://www.gizmodo.jp/article/2611-quick-share-android-windows-backup/",
+    "title": "Quick Shareにバックアップ機能追加。Androidスマホの写真がWindowsに自動保存される幸せ | ギズモード・ジャパン",
+    "site": "ギズモード・ジャパン",
+    "description": "Quick Shareの自動バックアップ機能によりAndroidスマホの写真がWindowsへ自動保存可能に。Googleフォトの容量を使わずPCストレージへ直接保存できる便利な新機能の仕組みを紹介します。",
+    "image": "https://media.loom-app.com/loom/2026/11/06/c1609171-bfce-40f4-bc9c-d6ed78050d71/original.jpg?w=1200&amp;h=630",
+    "icon": null
+   },
+   "category_label": "PC・ガジェット"
+  },
+  {
+   "label": "東証急落",
+   "points": [
+    "サンゼンロッピャクヨンジュウサンエン安",
+    "世界同時株安"
+   ],
+   "details": [
+    "東証の終値はサンゼンロッピャクヨンジュウサンエン安となりました。",
+    "世界同時株安の流れを受け、AI関連銘柄を中心に売りが広がりました。"
+   ],
+   "lines": [
+    {
+     "say": "経済ニュースです。東証は世界同時株安の影響を受け、終値でサンゼンロッピャクヨンジュウサンエン安となりました。",
+     "show": "経済ニュースです。東証は世界同時株安の影響を受け、終値で3643円安となりました。"
+    },
+    {
+     "say": "AI関連銘柄への売りが目立っています。",
+     "show": "AI関連銘柄への売りが目立っています。"
+    }
+   ],
+   "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE12NzRWUlphcEM3LWlxS0ZnZlVCanRELTVDeG5rdzRmVVVFTXp1XzRrZVo1S19GUkJiNktoclVtTmthZkQ4YWlScFRtLW45Q292SmJfa1FFTmFIZ0F0TExkTFlMMA?oc=5",
+   "link": {
+    "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE12NzRWUlphcEM3LWlxS0ZnZlVCanRELTVDeG5rdzRmVVVFTXp1XzRrZVo1S19GUkJiNktoclVtTmthZkQ4YWlScFRtLW45Q292SmJfa1FFTmFIZ0F0TExkTFlMMA?oc=5",
+    "title": "東証急落、終値は３６４３円安 世界同時株安、ＡＩ関連銘柄売り - 山陽新聞",
+    "site": "\"株式市場 続落 OR 続伸 OR 反発 OR 急落 when:1d\" - Google ニュース",
+    "description": "",
+    "image": null,
+    "icon": null
+   },
+   "category_label": "経済・マーケット"
+  },
+  {
+   "label": "山でサーモン養殖",
+   "points": [
+    "山でのサーモン養殖",
+    "ニセンニジュウハチ年にイチマントン"
+   ],
+   "details": [
+    "山でサーモンを養殖する計画が進んでいます。",
+    "ニセンニジュウハチ年には年間イチマントンの生産を目指すとしています。"
+   ],
+   "lines": [
+    {
+     "say": "最後に、ユニークな取り組みです。",
+     "show": "最後に、ユニークな取り組みです。"
+    },
+    {
+     "say": "山でサーモンを養殖する計画が進んでおり、ニセンニジュウハチ年には年間イチマントンの生産を目指すということです。",
+     "show": "山でサーモンを養殖する計画が進んでおり、2028年には年間1万トンの生産を目指すということです。"
+    }
+   ],
+   "url": "https://news.yahoo.co.jp/pickup/6601831?source=rss",
+   "link": {
+    "url": "https://news.yahoo.co.jp/pickup/6601831?source=rss",
+    "title": "山でサーモン養殖 28年1万t生産へ - Yahoo!ニュース",
+    "site": "Yahoo!ニュース",
+    "description": "津市の山中に、すしネタとして人気のアトランティックサーモンの養殖場がある。手がける企業「ピュアサーモンジャパン」が2026年5月に操業開始。海から遠く離れているものの、高度なろ過技術を用いて大量生産",
+    "image": "https://news-pctr.c.yimg.jp/t/news-topics/images/tpc/2026/11/8/4f605de208fde1d86e3c8c83ba93c2922e8ab410d91617600433f99ab0d77be7.jpg",
+    "icon": null
+   },
+   "category_label": "一般ニュース"
+  }
+ ],
+ "seconds": 140.28,
+ "lines_timed": [
+  {
+   "start": 0.6,
+   "end": 6.768,
+   "show": "おはようございます。11月8日日曜日、ものラジオです。",
+   "part": 0
+  },
+  {
+   "start": 7.018,
+   "end": 14.074,
+   "show": "今朝は注目のアニメ情報から経済の動きまで、9本のニュースをお届けします。",
+   "part": 0
+  },
+  {
+   "start": 14.324,
+   "end": 18.74,
+   "show": "人気アニメ「SPY×FAMILY」の最新情報です。",
+   "part": 1
+  },
+  {
+   "start": 18.99,
+   "end": 27.27,
+   "show": "2027年にテレビアニメSeason 4の放送と、劇場版第2弾の公開が決定しました。",
+   "part": 1
+  },
+  {
+   "start": 27.52,
+   "end": 31.024,
+   "show": "続いては「みなみけ」の話題です。",
+   "part": 2
+  },
+  {
+   "start": 31.274,
+   "end": 35.978,
+   "show": "14年ぶりとなる新作アニメの放送が決まりました。",
+   "part": 2
+  },
+  {
+   "start": 36.228,
+   "end": 42.708,
+   "show": "「ゆるキャン△ SEASON4」が、2027年4月から放送開始となります。",
+   "part": 3
+  },
+  {
+   "start": 42.958,
+   "end": 48.454,
+   "show": "新入生が加わったメインビジュアルとPVも公開されました。",
+   "part": 3
+  },
+  {
+   "start": 48.704,
+   "end": 52.736,
+   "show": "ゲーム「学園アイドルマスター」の話題です。",
+   "part": 4
+  },
+  {
+   "start": 52.986,
+   "end": 61.626,
+   "show": "倉本千奈に仕えるメイド、氷渡香名江が11月16日に実装されることが決定しました。",
+   "part": 4
+  },
+  {
+   "start": 61.876,
+   "end": 67.084,
+   "show": "「ブルーアーカイブ」では、ガチャ仕様の変更が話題となっています。",
+   "part": 5
+  },
+  {
+   "start": 67.334,
+   "end": 72.518,
+   "show": "改善か改悪か、プレイヤーの間で議論が続いています。",
+   "part": 5
+  },
+  {
+   "start": 72.768,
+   "end": 83.208,
+   "show": "AI関連のニュースです。アメリカのスタートアップが、オープンモデル「Ripple-65B Preview」を公開しました。",
+   "part": 6
+  },
+  {
+   "start": 83.458,
+   "end": 89.65,
+   "show": "開発費を抑えつつ、大規模モデルを上回る性能を報告しています。",
+   "part": 6
+  },
+  {
+   "start": 89.9,
+   "end": 94.916,
+   "show": "Androidの「Quick Share」にバックアップ機能が追加されました。",
+   "part": 7
+  },
+  {
+   "start": 95.166,
+   "end": 101.526,
+   "show": "スマホの写真をWindowsへ自動保存できるようになり、より便利になります。",
+   "part": 7
+  },
+  {
+   "start": 101.776,
+   "end": 111.928,
+   "show": "経済ニュースです。東証は世界同時株安の影響を受け、終値で3643円安となりました。",
+   "part": 8
+  },
+  {
+   "start": 112.178,
+   "end": 116.09,
+   "show": "AI関連銘柄への売りが目立っています。",
+   "part": 8
+  },
+  {
+   "start": 116.34,
+   "end": 119.844,
+   "show": "最後に、ユニークな取り組みです。",
+   "part": 9
+  },
+  {
+   "start": 120.094,
+   "end": 129.502,
+   "show": "山でサーモンを養殖する計画が進んでおり、2028年には年間1万トンの生産を目指すということです。",
+   "part": 9
+  },
+  {
+   "start": 129.752,
+   "end": 135.296,
+   "show": "今朝は「SPY×FAMILY」の2027年の展開に注目しました。",
+   "part": 10
+  },
+  {
+   "start": 135.546,
+   "end": 139.962,
+   "show": "それでは、今日も良い一日をお過ごしください。",
+   "part": 10
+  }
+ ],
+ "segments": [
+  {
+   "kind": "opening",
+   "index": null,
+   "start": 0.6,
+   "end": 14.324
+  },
+  {
+   "kind": "news",
+   "index": 0,
+   "start": 14.324,
+   "end": 27.52
+  },
+  {
+   "kind": "news",
+   "index": 1,
+   "start": 27.52,
+   "end": 36.228
+  },
+  {
+   "kind": "news",
+   "index": 2,
+   "start": 36.228,
+   "end": 48.704
+  },
+  {
+   "kind": "news",
+   "index": 3,
+   "start": 48.704,
+   "end": 61.876
+  },
+  {
+   "kind": "news",
+   "index": 4,
+   "start": 61.876,
+   "end": 72.768
+  },
+  {
+   "kind": "news",
+   "index": 5,
+   "start": 72.768,
+   "end": 89.9
+  },
+  {
+   "kind": "news",
+   "index": 6,
+   "start": 89.9,
+   "end": 101.776
+  },
+  {
+   "kind": "news",
+   "index": 7,
+   "start": 101.776,
+   "end": 116.34
+  },
+  {
+   "kind": "news",
+   "index": 8,
+   "start": 116.34,
+   "end": 129.752
+  },
+  {
+   "kind": "closing",
+   "index": null,
+   "start": 129.752,
+   "end": 140.212
+  }
+ ],
+ "made_at": "2026-11-08T22:18:59"
+}

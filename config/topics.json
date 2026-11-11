@@ -1,0 +1,322 @@
+{
+ "_comment": "番組の題材設定。ここを編集するだけで、ジャンルの追加・削除・並び替え・取得元の変更ができます。コードの修正は不要です。",
+ "episode": {
+  "target_seconds": 200,
+  "max_total_items": 9,
+  "language": "ja",
+  "voice_style": "10代後半の生意気で小悪魔的な女の子が、相手をからかって少し見下すような得意げで甘い口調で、でも内容ははっきり聞き取りやすく",
+  "edge": {
+   "rate": "+8%",
+   "pitch": "+25Hz"
+  }
+ },
+ "categories": [
+  {
+   "id": "general",
+   "label": "一般ニュース",
+   "enabled": true,
+   "max_items": 2,
+   "style": "事実を落ち着いて簡潔に。憶測は避ける。",
+   "feeds": [
+    "https://news.yahoo.co.jp/rss/topics/top-picks.xml"
+   ]
+  },
+  {
+   "id": "anime",
+   "label": "アニメ",
+   "enabled": true,
+   "max_items": 3,
+   "style": "話題のアニメや、アニメ化・続編・劇場版の発表を中心に。作品名は正確に。親しみやすい口調で。グッズ・コラボカフェ・店舗の話は避ける。",
+   "feeds": [
+    {
+     "url": "https://animeanime.jp/rss/index.rdf",
+     "include_keywords": [
+      "アニメ化",
+      "制作決定",
+      "放送決定",
+      "第2期",
+      "第3期",
+      "第4期",
+      "続編",
+      "劇場版",
+      "映像化",
+      "新PV",
+      "解禁",
+      "最終回",
+      "話題",
+      "人気",
+      "ヒット",
+      "配信開始",
+      "放送開始"
+     ]
+    },
+    {
+     "url": "https://natalie.mu/comic/feed/news",
+     "include_keywords": [
+      "アニメ化",
+      "制作決定",
+      "放送決定",
+      "第2期",
+      "第3期",
+      "第4期",
+      "続編",
+      "劇場版",
+      "映像化",
+      "新PV",
+      "解禁",
+      "最終回",
+      "話題",
+      "人気",
+      "ヒット",
+      "配信開始",
+      "放送開始"
+     ]
+    },
+    {
+     "url": "https://gigazine.net/news/rss_2.0/",
+     "include_keywords": [
+      "アニメ化",
+      "TVアニメ",
+      "劇場版",
+      "制作決定"
+     ]
+    },
+    {
+     "url": "https://news.google.com/rss/search?q=%E3%82%A2%E3%83%8B%E3%83%A1%E5%8C%96%E6%B1%BA%E5%AE%9A%20when%3A2d&hl=ja&gl=JP&ceid=JP:ja"
+    },
+    {
+     "url": "https://news.google.com/rss/search?q=%E3%82%A2%E3%83%8B%E3%83%A1%20%E6%94%BE%E9%80%81%E6%B1%BA%E5%AE%9A%20%E7%B6%9A%E7%B7%A8%20when%3A2d&hl=ja&gl=JP&ceid=JP:ja"
+    }
+   ],
+   "exclude_keywords": [
+    "グッズ",
+    "限定アイテム",
+    "コラボカフェ",
+    "アパレル",
+    "雑貨",
+    "ランキング"
+   ]
+  },
+  {
+   "id": "games",
+   "label": "ゲーム",
+   "enabled": true,
+   "max_items": 2,
+   "style": "ブルーアーカイブ(ブルアカ)と学園アイドルマスター(学マス)の最新情報(イベント・実装・告知)。ゲーム名を正確に。",
+   "feeds": [
+    {
+     "url": "https://automaton-media.com/feed/",
+     "include_keywords": [
+      "ブルーアーカイブ",
+      "ブルアカ",
+      "学園アイドルマスター",
+      "学マス",
+      "学園アイマス"
+     ]
+    },
+    {
+     "url": "https://www.4gamer.net/rss/index.xml",
+     "include_keywords": [
+      "ブルーアーカイブ",
+      "ブルアカ",
+      "学園アイドルマスター",
+      "学マス",
+      "学園アイマス"
+     ]
+    },
+    {
+     "url": "https://www.gamespark.jp/rss/index.rdf",
+     "include_keywords": [
+      "ブルーアーカイブ",
+      "ブルアカ",
+      "学園アイドルマスター",
+      "学マス",
+      "学園アイマス"
+     ]
+    },
+    {
+     "url": "https://news.google.com/rss/search?q=%E3%83%96%E3%83%AB%E3%83%BC%E3%82%A2%E3%83%BC%E3%82%AB%E3%82%A4%E3%83%96%20when%3A2d&hl=ja&gl=JP&ceid=JP:ja"
+    },
+    {
+     "url": "https://news.google.com/rss/search?q=%E5%AD%A6%E5%9C%92%E3%82%A2%E3%82%A4%E3%83%89%E3%83%AB%E3%83%9E%E3%82%B9%E3%82%BF%E3%83%BC%20OR%20%E5%AD%A6%E3%83%9E%E3%82%B9%20when%3A2d&hl=ja&gl=JP&ceid=JP:ja"
+    }
+   ],
+   "max_candidates": 24
+  },
+  {
+   "id": "gadget",
+   "label": "PC・ガジェット",
+   "enabled": true,
+   "max_items": 3,
+   "style": "PC本体・パーツ(CPU/GPU/SSD/メモリ/モニター/周辺機器)の話題を中心に。今までになかった新しい製品・世界初・新カテゴリを優先。製品名・価格・発売日を具体的に。",
+   "feeds": [
+    "https://pc.watch.impress.co.jp/data/rss/1.0/pcw/feed.rdf",
+    {
+     "url": "https://ascii.jp/rss.xml",
+     "include_keywords": [
+      "PC",
+      "GPU",
+      "CPU",
+      "SSD",
+      "メモリ",
+      "モニター",
+      "ディスプレイ",
+      "キーボード",
+      "Windows",
+      "Mac",
+      "ノートPC",
+      "ゲーミング",
+      "世界初",
+      "Ryzen",
+      "Core Ultra",
+      "Radeon",
+      "GeForce",
+      "NVIDIA",
+      "AMD",
+      "Intel",
+      "Snapdragon",
+      "タブレット",
+      "自作",
+      "マザーボード",
+      "USB"
+     ]
+    },
+    {
+     "url": "https://www.gizmodo.jp/index.xml",
+     "include_keywords": [
+      "PC",
+      "GPU",
+      "CPU",
+      "SSD",
+      "メモリ",
+      "モニター",
+      "ディスプレイ",
+      "キーボード",
+      "Windows",
+      "Mac",
+      "ノートPC",
+      "ゲーミング",
+      "世界初",
+      "Ryzen",
+      "Core Ultra",
+      "Radeon",
+      "GeForce",
+      "NVIDIA",
+      "AMD",
+      "Intel",
+      "Snapdragon",
+      "タブレット",
+      "自作",
+      "マザーボード",
+      "USB"
+     ]
+    },
+    {
+     "url": "https://gigazine.net/news/rss_2.0/",
+     "include_keywords": [
+      "PC",
+      "GPU",
+      "CPU",
+      "SSD",
+      "メモリ",
+      "モニター",
+      "ディスプレイ",
+      "キーボード",
+      "Windows",
+      "Mac",
+      "ノートPC",
+      "ゲーミング",
+      "世界初",
+      "Ryzen",
+      "Core Ultra",
+      "Radeon",
+      "GeForce",
+      "NVIDIA",
+      "AMD",
+      "Intel",
+      "Snapdragon",
+      "タブレット",
+      "自作",
+      "マザーボード",
+      "USB"
+     ]
+    },
+    "https://akiba-pc.watch.impress.co.jp/data/rss/1.0/ah/feed.rdf"
+   ],
+   "exclude_keywords": [
+    "コンカフェ",
+    "DVD",
+    "歯ブラシ",
+    "フィットネス"
+   ]
+  },
+  {
+   "id": "stocks",
+   "label": "経済・マーケット",
+   "enabled": true,
+   "max_items": 2,
+   "style": "特定の銘柄ではなく、世の中全体の経済・市場の動き(株価指数・為替・金利・物価・景気)を中心に。数値は出典の通りに。投資助言はしない。",
+   "feeds": [
+    {
+     "url": "https://news.yahoo.co.jp/rss/topics/business.xml",
+     "include_keywords": [
+      "株",
+      "日経",
+      "円安",
+      "円高",
+      "為替",
+      "相場",
+      "決算",
+      "金利",
+      "ドル",
+      "物価",
+      "景気",
+      "日銀",
+      "FRB",
+      "関税",
+      "賃上げ"
+     ]
+    },
+    {
+     "url": "https://news.google.com/rss/search?q=%E6%A0%AA%E5%BC%8F%E5%B8%82%E5%A0%B4%20%E7%B6%9A%E8%90%BD%20OR%20%E7%B6%9A%E4%BC%B8%20OR%20%E5%8F%8D%E7%99%BA%20OR%20%E6%80%A5%E8%90%BD%20when%3A1d&hl=ja&gl=JP&ceid=JP:ja"
+    },
+    {
+     "url": "https://news.google.com/rss/search?q=%E5%86%86%E7%9B%B8%E5%A0%B4%20%E5%86%86%E5%AE%89%20OR%20%E5%86%86%E9%AB%98%20%E3%83%8B%E3%83%A5%E3%83%BC%E3%82%B9%20when%3A1d&hl=ja&gl=JP&ceid=JP:ja"
+    },
+    {
+     "url": "https://news.google.com/rss/search?q=NY%E3%83%80%E3%82%A6%20OR%20%E3%83%8A%E3%82%B9%E3%83%80%E3%83%83%E3%82%AF%20%E7%B5%82%E5%80%A4%20%E7%B1%B3%E6%A0%AA%20when%3A1d&hl=ja&gl=JP&ceid=JP:ja"
+    }
+   ],
+   "disclaimer": "投資判断はご自身でお願いします。",
+   "exclude_keywords": [
+    "Yahoo!ファイナンス",
+    "株価・株式情報",
+    "基準価格",
+    "指数情報",
+    "投資信託"
+   ]
+  }
+ ],
+ "preferences": {
+  "_comment": "ここに好みを書くとAIの記事選びの基準になります。書き換えて調整してください。",
+  "likes": "話題になっているアニメ、アニメ化・続編・劇場版の発表。ブルーアーカイブと学園アイドルマスターの最新情報。PCまわりの新製品、とくに今までになかった新しい製品や世界初。世の中全体の経済・市場の動き(特定銘柄ではない)。",
+  "dislikes": "殺人・傷害などの事件、事故、災害の被害の詳細、芸能人のゴシップ、政治家の失言、広告記事、グッズや店舗の宣伝、特定銘柄の推奨、同じ話題の重複",
+  "highlight_rule": "締めで取り上げる注目の1本は、明るい話題か役に立つ話題から選ぶ。事件・事故は選ばない。"
+ },
+ "exclude_keywords": [
+  "殺害",
+  "刺さ",
+  "切りつけ",
+  "死亡",
+  "逮捕",
+  "不倫",
+  "炎上",
+  "PR",
+  "遺体",
+  "容疑",
+  "死体",
+  "行方不明",
+  "詐欺",
+  "強盗"
+ ]
+}
